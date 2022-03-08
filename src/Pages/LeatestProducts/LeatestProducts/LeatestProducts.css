@@ -1,0 +1,20 @@
+.leatest-div{
+    margin-bottom: 48px;
+}
+.div-title{
+    font-family: 'Josefin Sans';
+    font-size: 42px;
+    font-weight: 700;
+    color: #1A0B5B;
+    text-align: center;
+    margin: 0;
+}
+.sub-category{
+    font-family: 'Lato';
+    color: #151875;
+    font-size: 22px;
+}
+.sub-category:hover{
+    color: #FB4997;
+    border-bottom:2px solid #FB4997;
+}

@@ -1,0 +1,57 @@
+.uniqueBanner{
+    background-color: #F1F0FF;
+    height: 579px;
+    margin-top: 130px;
+}
+.uniqueBnnrDetails .pinkPoint{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: #F52B70;
+
+}
+.uniqueBnnrDetails .bluePoint{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: #2B2BF5;
+
+}
+.uniqueBnnrDetails .greenPoint{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: #2BF5CC;
+
+}
+.uniqueH2text{
+font-family: 'Josefin Sans';
+font-size: 35px;
+color: #151B75;
+font-weight: 700;
+}
+.pointTextColor{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    color: #ACABC3;
+
+}
+.uniqueButton{
+    background-color: #FB2E86;
+    border-color: #FB2E86;
+    border-radius: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.italianSofa{
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    color: #151B75;
+}
+.italianSofaPrice{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    color: #151B75;
+}

@@ -1,0 +1,116 @@
+.shoppingCart{
+    background-color: #F6F5FF;
+    height: 186px;
+}
+
+
+.shoppingCart .container h2 {
+    color: #101750;
+    font-family: Josefin Sans;
+    font-size: 36px;
+    line-height: 42.19px;
+}
+
+.shoppingCart .container p {
+    font-family: lato;
+    color: #000000;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 500;
+}
+.shoppingCart .container p span{
+    color: #FB2E86;
+}
+
+/*------------- cart-item -----------------------*/
+.t-header{
+    font-family: 'Josefin Sans';
+    font-size: 26px;
+    color: #1D3178;
+}
+.itemName {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+}
+.itemAttributes {
+    font-family: 'Josefin Sans';
+    color: #A1A8C1;
+
+}
+.itemPrice{
+    font-family: 'Josefin Sans';
+    color: #15245E;
+} 
+#case-number{
+    font-family: 'Josefin Sans';
+    color: #15245E;
+    padding-top: 2px;
+} 
+/* #case-number{
+    color:  gray;
+    font-family: 'Lato';
+    font-size: 17px;
+} */
+.cartTotals h5{
+    font-family: 'Lato';
+    color: #1D3178;
+}
+.cartTotals label{
+    font-family: 'Lato';
+    color: #8A91AB;
+}
+
+.cart-item-img{
+    height: 87px;
+    width: 83px;
+    border-radius: 3px;
+    background-color: #C4C4C4;
+    
+}
+
+.cancel-item{
+margin-top: -80px;
+margin-left: -6px;
+z-index: 12;
+}
+
+.quantity-box{
+    height: 25px;
+    width: 100px;
+    background-color: #F0EFF2;
+}
+.quantity-box .minus-btn, .quantity-box .plus-btn {
+    height: 25px;
+    width: 16px;
+    font-weight: 700;
+    color:  #999999;
+    background-color: #e2e2ec;
+    border: none;
+}
+
+/*------------cart totals----- */
+.cartTotals{
+    height: 260px;
+    background-color: #F4F4FC;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+hr{
+    background-color:  #747474;
+}
+
+input[type=checkbox]:checked{
+accent-color: #2da72d;
+    
+}
+.checkoutBtn{
+    background-color: #19D16F;
+    border-radius: 3px;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 100%;
+    border: none;
+    padding: 10px                         ;
+}

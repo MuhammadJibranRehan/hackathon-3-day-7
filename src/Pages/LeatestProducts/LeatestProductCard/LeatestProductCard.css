@@ -1,0 +1,48 @@
+.pdbody{
+    height: 270px;
+    background-color: #F7F7F7;
+}
+
+.l-icon{
+    margin-right: 90%;
+}
+.l-icon img{
+    display: none;
+}
+
+
+.pdfooter{
+    height: 36px;
+}
+.pdname{
+    margin: 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #EEEFFB;
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    color: #151875;
+}
+.spPrice{
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    color: #151875;
+}
+.rePrice{
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    color: #FB2448;
+}
+.pd:hover .pdbody{
+    background-color: #FFFFFF;
+}
+.pd:hover .pdbody .l-icon img{
+    display: block;
+    margin-bottom: 7px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.pd:hover .pdbody .l-icon img:hover{
+    background-color: #EEEFFB;
+}
+
+

@@ -1,0 +1,71 @@
+.footerDiv{
+    height: 532px;
+}
+
+.footerbody{
+    height: 479px;
+    background-color: #EEEFFB;
+}
+.footer-logo{
+    font-family: 'Josefin Sans';
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 95px;
+    padding: 0;
+}
+.signUp-input{
+    height: 40px;
+    width: 280px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: #FFFFFF;
+    
+}
+.signUp-button{
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: #FFFFFF;
+    background-color: #FB2E86;
+}
+.footer-sm-div{
+    margin-top: 97px; 
+    margin-bottom: 42px;
+    font-family: 'Josefin Sans'; 
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #000000;
+}
+.footerDiv h6, .signUp-input, .signUp-input::placeholder{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8FB9;
+
+}
+
+.footerBottom{
+    height: 53px;
+    background-color: #E7E4F8;
+}
+.copy-right{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    color:#9DA0AE;
+    text-align: center;
+}
+.iconBG{
+    height: 14px;
+    width: 14px;
+    background-color: #151875;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 7px;
+}

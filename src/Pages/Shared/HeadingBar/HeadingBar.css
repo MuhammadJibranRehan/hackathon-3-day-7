@@ -1,0 +1,39 @@
+.Heading-Bar{
+    background-color: #7E33E0;
+    height: 44px;
+    width: 100%;
+    color: white;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    line-height: 19px;
+}
+#sm-dvice-hide{
+    display: flex;
+}
+.pill{
+    font-family: 'Lato';
+    background-color: #FB2E86;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: -4px;
+    background-color: #FB2E86;
+}
+
+/*--------------Medea Queries-----------------
+           
+
+/* ------------Mobile Devices--------------*/
+@media only screen and (max-width: 688px) {
+    .Heading-Bar{
+        height: auto;
+    }
+    #sm-dvice-hide{
+        display: none;
+    }
+    .pill{
+        margin-left: 15px;
+    }
+
+}
+

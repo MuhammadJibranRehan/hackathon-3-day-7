@@ -1,0 +1,54 @@
+.logo-font{
+    font-family: 'Josefin Sans';
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 700;
+    width: 98px;
+    color:#0D0E43;
+}
+.navigation-font{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color:#0D0E43;  
+}
+
+.navigation-font:hover{
+    color: #FB2E86;
+}
+.navigation-font:visited{
+    color: #FB2E86;
+}
+
+.search-input{
+    width: 300px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #E7E6EF;
+  }
+.search-button{
+    height: 40px;
+    background-color: #FB2E86;
+    border: 1px solid #FB2E86;
+    border-radius: 3px;
+  }
+  
+
+/* .hv:hover{
+    background-color: chocolate;
+}
+.login{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.btn-authentication{
+    border: none;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.btn-authentication:hover, .login:hover{
+    color: rgb(248, 103, 0);
+} */

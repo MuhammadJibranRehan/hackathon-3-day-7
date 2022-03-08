@@ -1,0 +1,23 @@
+.notFoundBar{
+    background-color: #F6F5FF;
+    height: 186px;
+}
+
+
+.notFoundBar .container h2 {
+    color: #101750;
+    font-family: Josefin Sans;
+    font-size: 36px;
+    line-height: 42.19px;
+}
+
+.notFoundBar .container p {
+    font-family: lato;
+    color: #000000;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 500;
+}
+.notFoundBar .container p span{
+    color: #FB2E86;
+}
