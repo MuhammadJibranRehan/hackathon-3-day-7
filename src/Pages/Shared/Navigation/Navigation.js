@@ -8,19 +8,33 @@ import './Navigation.css';
 
 const Navigation = () => {
     // const { user, logOut } = useAuth();
+    let page = '/';
+    if (typeof window !== `undefined`) {
+        page = window.location.pathname;
+    }
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className='' sticky="top">
+            <Navbar collapseOnSelect expand="lg" className='mt-5 ' >
                 <Container>
                     <Navbar.Brand as={HashLink} to="/home" className='logo-font'>Hekto</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse  >
                         <Nav className="mx-auto">
-                            <Nav.Link as={HashLink} to='/home#home' ><h6 className=' navigation-font  fs-5'>Home</h6></Nav.Link>
-                            <Nav.Link as={HashLink} to='/products'><h6 className=' navigation-font  fs-5'>Products</h6></Nav.Link>
-                            <Nav.Link as={HashLink} to='/about-us'><h6 className='navigation-font fs-5' >About Us</h6></Nav.Link>
-                            <Nav.Link as={HashLink} to='/admin'><h6 className=' navigation-font fs-5' >Admin</h6> </Nav.Link>
-                            <Nav.Link as={HashLink} to='/login'> <h6 className=' navigation-font fs-5'>Login</h6> </Nav.Link>
+                            <Nav.Link as={HashLink} to='/' ><h6 className={
+                                page === '/' || page === '/home' ? "navigation-font  fs-5 active" : "navigation-font  fs-5"
+                            }>Home</h6></Nav.Link>
+                            <Nav.Link as={HashLink} to='/products'><h6 className={
+                                page === '/products' || page === '/products/' ? "navigation-font  fs-5 active" : "navigation-font  fs-5"
+                            }>Products</h6></Nav.Link>
+                            <Nav.Link as={HashLink} to='/about-us'><h6 className={
+                                page === '/about-us' || page === '/about-us/' ? "navigation-font  fs-5 active" : "navigation-font  fs-5"
+                            } >About Us</h6></Nav.Link>
+                            <Nav.Link as={HashLink} to='/admin'><h6 className={
+                                page === '/admin' || page === '/admin/' ? "navigation-font  fs-5 active" : "navigation-font  fs-5"
+                            } >Admin</h6> </Nav.Link>
+                            <Nav.Link as={HashLink} to='/login'> <h6 className={
+                                page === '/login' || page === '/register' ? "navigation-font  fs-5 active" : "navigation-font  fs-5"
+                            }>Login</h6> </Nav.Link>
                         </Nav>
                         <Nav>
                             {/* 

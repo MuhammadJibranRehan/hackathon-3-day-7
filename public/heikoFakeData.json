@@ -1,0 +1,165 @@
+[
+    {
+        "_id": 1,
+        "title": "Cantilever chair",
+        "code": "Y524201",
+        "description": "Mega Discount, Impression of A...",
+        "price": 42.00,
+        "reguler-price": 65.00,
+        "discountPercentage": 8.4,
+        "rating": 4.26,
+        "stock": 65,
+        "brand": "Impression of Acqua Di Gio",
+        "category": "Featured",
+        "thumbnail": "https://i.ibb.co/KX84NRZ/image-1.png",
+        "images": [
+            "https://dummyjson.com/image/i/products/11/1.jpg",
+            "https://dummyjson.com/image/i/products/11/2.jpg",
+            "https://dummyjson.com/image/i/products/11/3.jpg",
+            "https://dummyjson.com/image/i/products/11/thumbnail.jpg"
+        ]
+    },
+    {
+        "_id": 2,
+        "title": "Cantilever chair",
+        "code": "Y524201",
+        "description": "Mega Discount, Impression of A...",
+        "price": 42.00,
+        "reguler-price": 65.00,
+        "discountPercentage": 8.4,
+        "rating": 4.26,
+        "stock": 65,
+        "brand": "Impression of Acqua Di Gio",
+        "category": "Featured",
+        "thumbnail": "https://i.ibb.co/zJSVwRf/image-2.png",
+        "images": [
+            "https://dummyjson.com/image/i/products/11/1.jpg",
+            "https://dummyjson.com/image/i/products/11/2.jpg",
+            "https://dummyjson.com/image/i/products/11/3.jpg",
+            "https://dummyjson.com/image/i/products/11/thumbnail.jpg"
+        ]
+    },
+    {
+        "_id": 3,
+        "title": "Cantilever chair",
+        "code": "Y524201",
+        "description": "Mega Discount, Impression of A...",
+        "price": 42.00,
+        "reguler-price": 65.00,
+        "discountPercentage": 8.4,
+        "rating": 4.26,
+        "stock": 65,
+        "brand": "Impression of Acqua Di Gio",
+        "category": "Featured",
+        "thumbnail": "https://i.ibb.co/D8qhdwY/image-3.png",
+        "images": [
+            "https://dummyjson.com/image/i/products/11/1.jpg",
+            "https://dummyjson.com/image/i/products/11/2.jpg",
+            "https://dummyjson.com/image/i/products/11/3.jpg",
+            "https://dummyjson.com/image/i/products/11/thumbnail.jpg"
+        ]
+    },
+    {
+        "_id": 4,
+        "title": "Cantilever chair",
+        "code": "Y524201",
+        "description": "Mega Discount, Impression of A...",
+        "price": 42.00,
+        "reguler-price": 65.00,
+        "discountPercentage": 8.4,
+        "rating": 4.26,
+        "stock": 65,
+        "brand": "Impression of Acqua Di Gio",
+        "category": "Featured",
+        "thumbnail": "https://i.ibb.co/289RTRt/image-4.png",
+        "images": [
+            "https://dummyjson.com/image/i/products/11/1.jpg",
+            "https://dummyjson.com/image/i/products/11/2.jpg",
+            "https://dummyjson.com/image/i/products/11/3.jpg",
+            "https://dummyjson.com/image/i/products/11/thumbnail.jpg"
+        ]
+    },
+    {
+        "_id": 5,
+        "title": "Cantilever chair",
+        "code": "Y524201",
+        "description": "Mega Discount, Impression of A...",
+        "price": 42.00,
+        "reguler-price": 65.00,
+        "discountPercentage": 8.4,
+        "rating": 4.26,
+        "stock": 65,
+        "brand": "Impression of Acqua Di Gio",
+        "category": "Featured",
+        "thumbnail": "https://i.ibb.co/289RTRt/image-4.png",
+        "images": [
+            "https://dummyjson.com/image/i/products/11/1.jpg",
+            "https://dummyjson.com/image/i/products/11/2.jpg",
+            "https://dummyjson.com/image/i/products/11/3.jpg",
+            "https://dummyjson.com/image/i/products/11/thumbnail.jpg"
+        ]
+    },
+    {
+        "_id": 6,
+        "title": "Cantilever chair",
+        "code": "Y524201",
+        "description": "Mega Discount, Impression of A...",
+        "price": 42.00,
+        "reguler-price": 65.00,
+        "discountPercentage": 8.4,
+        "rating": 4.26,
+        "stock": 65,
+        "brand": "Impression of Acqua Di Gio",
+        "category": "Leatest",
+        "sub-category": "New Arrival",
+        "thumbnail": "https://i.ibb.co/1zMkx4t/new-Arrival-1.png",
+        "images": [
+            "https://dummyjson.com/image/i/products/11/1.jpg",
+            "https://dummyjson.com/image/i/products/11/2.jpg",
+            "https://dummyjson.com/image/i/products/11/3.jpg",
+            "https://dummyjson.com/image/i/products/11/thumbnail.jpg"
+        ]
+    },
+    {
+        "_id": 7,
+        "title": "Cantilever chair",
+        "code": "Y524201",
+        "description": "Mega Discount, Impression of A...",
+        "price": 42.00,
+        "reguler-price": 65.00,
+        "discountPercentage": 8.4,
+        "rating": 4.26,
+        "stock": 65,
+        "brand": "Impression of Acqua Di Gio",
+        "category": "Leatest",
+        "sub-category": "New Arrival",
+        "thumbnail": "https://i.ibb.co/1zMkx4t/new-Arrival-1.png",
+        "images": [
+            "https://dummyjson.com/image/i/products/11/1.jpg",
+            "https://dummyjson.com/image/i/products/11/2.jpg",
+            "https://dummyjson.com/image/i/products/11/3.jpg",
+            "https://dummyjson.com/image/i/products/11/thumbnail.jpg"
+        ]
+    },
+    {
+        "_id": 8,
+        "title": "Cantilever chair",
+        "code": "Y524201",
+        "description": "Mega Discount, Impression of A...",
+        "price": 42.00,
+        "reguler-price": 65.00,
+        "discountPercentage": 8.4,
+        "rating": 4.26,
+        "stock": 65,
+        "brand": "Impression of Acqua Di Gio",
+        "category": "Leatest",
+        "sub-category": "New Arrival",
+        "thumbnail": "https://i.ibb.co/1zMkx4t/new-Arrival-1.png",
+        "images": [
+            "https://dummyjson.com/image/i/products/11/1.jpg",
+            "https://dummyjson.com/image/i/products/11/2.jpg",
+            "https://dummyjson.com/image/i/products/11/3.jpg",
+            "https://dummyjson.com/image/i/products/11/thumbnail.jpg"
+        ]
+    }
+]

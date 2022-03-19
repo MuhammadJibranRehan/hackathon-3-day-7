@@ -9,6 +9,7 @@ import itemCancel from '../../Images/cart-Cancel-icon.svg';
 import { Col, Container, Row } from 'react-bootstrap';
 
 
+
 const ShoppingCart = () => {
     const [quantity, setQuantity] = useState(1);
 

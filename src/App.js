@@ -9,20 +9,22 @@ import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import ShoppingCart from './Pages/ShoppingCart/ShoppingCart';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
+
 function App() {
+
   return (
     <>
       <AuthProvider>
         <Router >
           <Switch>
             <Route exact path='/'>
-              <Home></Home>
+              <Home ></Home>
             </Route>
             <Route path='/home'>
-              <Home></Home>
+              <Home ></Home>
             </Route>
             <Route path='/home'>
-              <Home></Home>
+              <Home ></Home>
             </Route>
             <PrivateRoute path='/cart'>
               <ShoppingCart></ShoppingCart>

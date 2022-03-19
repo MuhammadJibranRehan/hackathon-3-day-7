@@ -8,17 +8,17 @@
 }
 .navigation-font{
     font-family: 'Lato';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
+    font-size: 22px;
+    font-weight: 500;
     color:#0D0E43;  
 }
 
 .navigation-font:hover{
     color: #FB2E86;
 }
-.navigation-font:visited{
+.active{
     color: #FB2E86;
+    border-bottom: 2px solid #FB4997;
 }
 
 .search-input{

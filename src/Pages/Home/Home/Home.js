@@ -17,7 +17,7 @@ const Home = () => {
             <HeadingBar></HeadingBar>
             <Navigation></Navigation>
             <Banner></Banner>
-            <FeaturedProducts></FeaturedProducts>
+            <FeaturedProducts ></FeaturedProducts>
             <LeatestProducts></LeatestProducts>
             <ShopexOffer></ShopexOffer>
             <UniqueFeatureBanner></UniqueFeatureBanner>

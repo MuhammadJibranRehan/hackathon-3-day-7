@@ -13,8 +13,9 @@ import useAuth from '../../../Hooks/useAuth';
 
 const HeadingBar = () => {
     const { user, logOut } = useAuth();
+
     return (
-        <div className='Heading-Bar d-flex align-items-center pt-3'>
+        <div className='Heading-Bar d-flex align-items-center pt-3 fixed-top'>
             <Container className='d-flex justify-content-between'>
 
                 <div id='sm-dvice-hide'>
