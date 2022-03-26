@@ -33,7 +33,7 @@
     color: #FB2448;
 }
 .pd:hover .pdbody{
-    background-color: #FFFFFF;
+    background-color: #F1F0FF;
 }
 .pd:hover .pdbody .l-icon img{
     display: block;
@@ -42,7 +42,7 @@
     border-radius: 50%;
 }
 .pd:hover .pdbody .l-icon img:hover{
-    background-color: #EEEFFB;
+    background-color: #fbfbfb;
 }
 
 

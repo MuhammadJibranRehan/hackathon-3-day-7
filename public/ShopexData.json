@@ -1,0 +1,26 @@
+[
+    {
+        "_id": 111,
+        "title": "Free Delivery",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+        "thumbnail": "https://i.ibb.co/crk9tzG/free-delivery.png"
+    },
+    {
+        "_id": 222,
+        "title": "100% Cash Back",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+        "thumbnail": "https://i.ibb.co/44TH3rt/cashback.png"
+    },
+    {
+        "_id": 333,
+        "title": "Quality Product",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+        "thumbnail": "https://i.ibb.co/KwGrS8r/premium-quality.png"
+    },
+    {
+        "_id": 444,
+        "title": "24/7 Support",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+        "thumbnail": "https://i.ibb.co/JkM7w5Z/24-hours-support.png"
+    }
+]

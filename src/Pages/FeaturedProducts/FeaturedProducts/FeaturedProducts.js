@@ -17,7 +17,9 @@ const FeaturedProducts = () => {
                     products.filter(fPd => fPd.category === 'Featured').map(fPd =>
                         <FeaturedPductCard
                             key={fPd._id}
-                            fPd={fPd}></FeaturedPductCard>)
+                            fPd={fPd}
+                        ></FeaturedPductCard>
+                    )
                 }
             </div>
         </Container>

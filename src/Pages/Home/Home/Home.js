@@ -11,13 +11,15 @@ import Banner from '../Banner/Banner';
 import Testimonials from '../../Testimonials/Testimonials/Testimonials';
 
 
+
 const Home = () => {
+
     return (
         <>
-            <HeadingBar></HeadingBar>
+            <HeadingBar ></HeadingBar>
             <Navigation></Navigation>
             <Banner></Banner>
-            <FeaturedProducts ></FeaturedProducts>
+            <FeaturedProducts></FeaturedProducts>
             <LeatestProducts></LeatestProducts>
             <ShopexOffer></ShopexOffer>
             <UniqueFeatureBanner></UniqueFeatureBanner>

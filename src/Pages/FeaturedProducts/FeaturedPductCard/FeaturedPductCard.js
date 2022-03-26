@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import cartIcon from '../../../Images/featuredIcon/fluent_cart-24-regular.svg';
 import heartIcon from '../../../Images/featuredIcon/uil_heart-alt.svg';
@@ -7,20 +7,28 @@ import './FeaturedPductCard.css';
 
 const FeaturedPductCard = (props) => {
     // console.log(props.fPd);
-    const { title, thumbnail, code, price } = props.fPd;
+    const item = props.fPd;
+    const { title, thumbnail, code, price } = item;
+
+    const [cart, setCart] = useState([item]);
+    const addToCartHandler = pd => {
+        setCart([...cart, pd]);
+        console.log(cart);
+    };
+
 
     return (
         <div className='col-lg-3 col-md-6 md-12 g-4'>
             <div className='featuredCard'>
                 <div className='fCard-header'>
                     <div className='d-flex f-Icon'>
-                        <img className='img-fluid f-cartIcon mt-2 ms-2' src={cartIcon} alt="" srcset="" />
-                        <img className='img-fluid f-heartIcon mt-2' src={heartIcon} alt="" srcset="" />
-                        <img className='img-fluid f-searchPlus mt-2' src={searchPlusIcon} alt="" srcset="" />
+                        <img className='img-fluid f-cartIcon mt-2 ms-2' onClick={() => addToCartHandler(item)} src={cartIcon} alt="" />
+                        <img className='img-fluid f-heartIcon mt-2' src={heartIcon} alt="" />
+                        <img className='img-fluid f-searchPlus mt-2' src={searchPlusIcon} alt="" />
                     </div>
                     <div className='f-img-btn'>
                         <div className='text-center f-card-img'>
-                            <img className='img-fluid' src={thumbnail} alt="" srcset="" />
+                            <img className='img-fluid' src={thumbnail} alt="" />
                         </div>
                         <div className='d-flex justify-content-center mt-1'>
                             <Button className='fpd-view-dtails mt-4'>View Details</Button>
@@ -35,7 +43,7 @@ const FeaturedPductCard = (props) => {
                         <span></span>
                     </div>
                     <h6>Code - {code}</h6>
-                    <h6>${price}</h6>
+                    <h6>${price.toFixed(2)}</h6>
                 </div>
             </div>
         </div>

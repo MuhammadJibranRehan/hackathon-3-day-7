@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const useCart = products => {
-    const [cart, setCart] = useState([]);
+    // const [cart, setCart] = useState([]);
 
     useEffect(() => {
 
