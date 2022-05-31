@@ -7,6 +7,7 @@ import './Login.css';
 import useAuth from '../../../Hooks/useAuth';
 import { useLocation } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
+import Footer from '../../Shared/Footer/Footer';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -37,9 +38,9 @@ const Login = () => {
                     <div className='login-box mt-5 text-center d-flex justify-content-center align-items-center'>
                         <div className='sm-box'>
                             <h2 className='text-center login-text'>Login</h2>
-                            <p className='text-center pb-3'>Please login using account detail bellow.</p>
+                            <p className='text-center pb-3 txt-color'>Please login using account detail bellow.</p>
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <input className='d-block login-email'
+                                <input className='d-block login-email inpt-color px-1'
                                     {...register("email", {
                                         required: "required",
                                         pattern: {
@@ -53,7 +54,7 @@ const Login = () => {
                                 <div className='loginErrorMessage text-danger mt-1'>
                                     {errors.email && <span role="alert">{errors.email.message}</span>}
                                 </div>
-                                <input className='d-block login-password'
+                                <input className='d-block login-password inpt-color px-1'
 
                                     {...register("password", {
                                         required: "required",
@@ -68,16 +69,20 @@ const Login = () => {
                                 <div className='loginErrorMessage text-danger mt-1'>
                                     {errors.password && <span role="alert">{errors.password.message}</span>}
                                 </div>
-                                <p className='text-start mt-1'>Forgot your password?</p>
-                                <Button className='sign-in text-center mt-2' type="submit">Sign In</Button>
+                                <p className='text-start m-0'>Forgot your password?</p>
+                                <br />
+                                <Button className='sign-in text-center' type="submit">Sign In</Button>
                             </form>
-                            <Nav.Link href='/register'>
-                                <p className='text-center mt-3'>Don’t have an Account? Create account</p>
-                            </Nav.Link>
+                            <br />
+
+                            <p className='text-center m-0 p-0'><span className='txt-color'>Don’t have an Account?</span><Nav.Link href='/register'> Create account</Nav.Link></p>
+
                         </div>
                     </div>
                 </div>
             </Container>
+            <br /><br /> <br /> <br /><br />
+            <Footer></Footer>
         </>
     );
 };

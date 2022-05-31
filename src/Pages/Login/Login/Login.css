@@ -1,4 +1,4 @@
-.myAccount{
+.myAccount {
     background-color: #F6F5FF;
     height: 186px;
 }
@@ -18,49 +18,68 @@
     line-height: 19.2px;
     font-weight: 500;
 }
-.myAccount .container p span{
+
+.myAccount .container p span {
     color: #FB2E86;
 }
-.login-area{
+
+.login-area {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.login-box{
+
+.login-box {
     width: 544px;
     height: 474px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 25px 10px #f0f0fa;
 }
+
 /* .sm-box{
     border: 1px solid red;
     height: 374px;
     width: 433px;
 } */
-.login-text{
+.login-text {
     font-family: Josefin Sans;
     font-weight: 700;
     font-size: 32px;
     line-height: 37px;
     color: #000000;
 }
-.login-box p{
+
+.txt-color {
+    color: #9096b2;
+}
+
+.inpt-color {
+    outline: none;
+    border: 1px solid #9096b2;
+}
+
+.login-box p {
     font-family: Lato;
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
 }
 
-form .login-email, .login-password, .sign-in, .loginErrorMessage{
+form .login-email,
+.login-password,
+.sign-in,
+.loginErrorMessage {
     width: 432px;
     height: 36px;
 }
-.sign-in{
+
+.sign-in {
     color: #FFFFFF;
     background-color: #FB2E86;
     border-color: #FB2E86;
 }
-.sign-in:hover{
+
+.sign-in:hover {
     background-color: #e0317d;
     border-color: #e0317d;
 }
@@ -70,11 +89,15 @@ form .login-email, .login-password, .sign-in, .loginErrorMessage{
 
 /* ------------Mobile Devices--------------*/
 @media only screen and (max-width: 688px) {
-    .login-box{
+    .login-box {
         width: 100vw;
         height: 430px;
     }
-    form .login-email, .login-password, .sign-in, .loginErrorMessage{
+
+    form .login-email,
+    .login-password,
+    .sign-in,
+    .loginErrorMessage {
         width: 330px;
         height: 36px;
     }

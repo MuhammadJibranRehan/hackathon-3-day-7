@@ -1,15 +1,15 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
-const useCart = products => {
-    // const [cart, setCart] = useState([]);
+// const useCart = products => {
+//     // const [cart, setCart] = useState([]);
 
-    useEffect(() => {
+//     useEffect(() => {
 
-        if (products.length) {
+//         if (products.length) {
 
-        }
+//         }
 
-    }, [products]);
+//     }, [products]);
 
-}
-export default useCart;
+// }
+// export default useCart;

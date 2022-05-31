@@ -46,7 +46,7 @@ const Footer = () => {
                                     <h6 className='mb-4'>Order Tracking</h6>
                                 </Col>
                                 <Col xs={12} md={4}>
-                                    <h2 className='footer-sm-div'>Pagess</h2>
+                                    <h2 className='footer-sm-div'>Pages</h2>
                                     <h6 className='mb-4'>Blog</h6>
                                     <h6 className='mb-4'>Browse the Shop</h6>
                                     <h6 className='mb-4'>Category</h6>

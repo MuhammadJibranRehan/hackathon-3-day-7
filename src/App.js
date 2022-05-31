@@ -8,6 +8,9 @@ import Register from './Pages/Login/Register/Register';
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import ShoppingCart from './Pages/ShoppingCart/ShoppingCart';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Admin from './Pages/Admin/Admin';
+import Products from './Pages/Products/Products';
+import AboutUs from './Pages/AboutUs/AboutUs';
 
 
 function App() {
@@ -23,11 +26,17 @@ function App() {
             <Route path='/home'>
               <Home ></Home>
             </Route>
-            <Route path='/home'>
-              <Home ></Home>
+            <Route path='/products'>
+              <Products></Products>
+            </Route>
+            <Route path='/about-us'>
+              <AboutUs></AboutUs>
             </Route>
             <PrivateRoute path='/cart'>
               <ShoppingCart></ShoppingCart>
+            </PrivateRoute>
+            <PrivateRoute path='/admin'>
+              <Admin></Admin>
             </PrivateRoute>
             <Route path='/login'>
               <Login></Login>

@@ -33,10 +33,10 @@ const Register = () => {
                     <div className='register-box mt-5 text-center d-flex justify-content-center align-items-center'>
                         <div className='sm-box'>
                             <h2 className='text-center register-text'>Register</h2>
-                            <p className='text-center'>Please register account detail bellow.</p>
+                            <p className='text-center txt-color'>Please register account detail bellow.</p>
 
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <input className='name'
+                                <input className='name inpt-color px-1'
                                     {...register("name",
                                         {
                                             required: 'this field required.',
@@ -49,7 +49,7 @@ const Register = () => {
                                 <div className='errorMessage text-danger'>
                                     {errors.name && <span role="alert">{errors.name.message}</span>}
                                 </div>
-                                <input className='d-block email'
+                                <input className='d-block email inpt-color px-1'
                                     {...register("email", {
                                         required: "this field required.",
                                         pattern: {
@@ -63,7 +63,7 @@ const Register = () => {
                                 <div className='errorMessage text-danger'>
                                     {errors.email && <span role="alert">{errors.email.message}</span>}
                                 </div>
-                                <input className='d-block password'
+                                <input className='d-block password inpt-color px-1'
 
                                     {...register("password", {
                                         required: "this field required.",
@@ -78,7 +78,7 @@ const Register = () => {
                                 <div className='errorMessage text-danger '>
                                     {errors.password && <span role="alert">{errors.password.message}</span>}
                                 </div>
-                                <input className='d-block password'
+                                <input className='d-block password inpt-color px-1'
 
                                     {...register("rePassword", {
                                         required: "this field required.",
@@ -99,9 +99,10 @@ const Register = () => {
 
                                 <Button className='registerButton text-center p-0' type="submit">Register</Button>
                             </form>
-                            <Nav.Link href='/login'>
-                                <p className='text-center mt-2'>Already Registered? Please Login</p>
-                            </Nav.Link>
+                            <br />
+
+                            <p className='text-center m-0 p-0'><span className='txt-color'>Already Registered?</span><Nav.Link href='/login'> Please Login</Nav.Link></p>
+
 
                         </div>
                     </div>

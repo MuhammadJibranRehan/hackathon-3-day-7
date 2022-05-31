@@ -10,9 +10,13 @@ import './HeadingBar.css';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
+import { useCartContext } from '../../../Contexts/CartContext/CartContext';
+
 
 const HeadingBar = () => {
     const { user, logOut } = useAuth();
+
+    const { state: { cart }, } = useCartContext();
 
     return (
         <div className='Heading-Bar d-flex align-items-center pt-3 fixed-top'>
@@ -40,7 +44,7 @@ const HeadingBar = () => {
                     <Link className='text-decoration-none text-white' as={HashLink} to='/cart'><h6 className='ms-2'>Cart</h6></Link>
                     <span><Link className='text-decoration-none text-white' as={HashLink} to='/cart'>
                         <Image className='img-fluid mb-2 ms-1 position-relative ' src={cartIcon} alt='' />
-                        <Badge bg="badge position-absolute pill px-1 py-0 mt-2  top-0  ">0</Badge></Link>
+                        <Badge bg="badge position-absolute pill px-1 py-0 mt-2  top-0  ">{cart.length}</Badge></Link>
                     </span>
 
                     {user?.email ?

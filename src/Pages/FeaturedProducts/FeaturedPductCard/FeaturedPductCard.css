@@ -1,41 +1,50 @@
-.featuredCard{
+.featuredCard {
     height: 385px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 8px 3px #ebebeb;
 }
-.fCard-header{
+
+.fCard-header {
     height: 260px;
     background-color: #F6F7FB;
 }
 
-.fpd-view-dtails, .f-cartIcon, .f-heartIcon, .f-searchPlus{
+.fpd-view-dtails,
+.f-cartIcon,
+.f-heartIcon,
+.f-searchPlus {
     display: none;
 }
-.f-img-btn{
+
+.f-img-btn {
 
     height: 200px;
 }
-.f-card-img{
+
+.f-card-img {
     padding-top: 37px;
     height: 150px;
     width: auto;
 }
 
-.fCard-footer .rectangleColor span{
+.fCard-footer .rectangleColor span {
     height: 4px;
     width: 14px;
     border-radius: 10px;
 }
-.fCard-footer .rectangleColor span:nth-child(1){
+
+.fCard-footer .rectangleColor span:nth-child(1) {
     background-color: #05E6B7;
     margin-right: 4px;
 
 }
-.fCard-footer .rectangleColor span:nth-child(2){
+
+.fCard-footer .rectangleColor span:nth-child(2) {
     background-color: #F701A8;
     margin-right: 4px;
 }
-.fCard-footer .rectangleColor span:nth-child(3){
+
+.fCard-footer .rectangleColor span:nth-child(3) {
     background-color: #00009D;
 }
 
@@ -45,29 +54,44 @@
     background-color: #2F1AC4;
     transition: 0.5s ease;
 }
-.featuredCard:hover .f-cartIcon,.featuredCard:hover .f-heartIcon,.featuredCard:hover .f-searchPlus{
+
+.featuredCard:hover .f-cartIcon,
+.featuredCard:hover .f-heartIcon,
+.featuredCard:hover .f-searchPlus {
     display: block;
     padding: 5px;
 }
-.featuredCard:hover .f-cartIcon:hover,.featuredCard:hover .f-heartIcon:hover,.featuredCard:hover .f-searchPlus:hover{
+
+.featuredCard:hover .f-cartIcon:hover,
+.featuredCard:hover .f-heartIcon:hover {
     display: block;
     background-color: #e2e4fa;
     padding: 5px;
     border-radius: 50%;
 }
 
-.featuredCard:hover .f-card-img{
+.featuredCard:hover .f-searchPlus:hover {
+    display: block;
+    background-color: #e2e4fa;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.featuredCard:hover .f-card-img {
     padding-top: 0px;
 }
+
 .featuredCard:hover .fpd-view-dtails {
     display: block;
     background-color: #08D15F;
     border-color: #08D15F;
     color: #FFFFFF;
 }
-.featuredCard:hover  .fCard-header{
+
+.featuredCard:hover .fCard-header {
     background-color: #F7F7F7;
 }
-.featuredCard:hover .fCard-footer .rectangleColor span:nth-child(3){
+
+.featuredCard:hover .fCard-footer .rectangleColor span:nth-child(3) {
     background-color: #FFEAC1;
 }
