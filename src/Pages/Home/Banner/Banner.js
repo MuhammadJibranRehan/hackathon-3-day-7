@@ -19,8 +19,7 @@ const Banner = () => {
                             <h6>Best Furniture For Your Castle....</h6>
                             <h1>New Furniture Collection</h1>
                             <h1>Trends in 2022</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
-                                in phasellus non in justo.</p>
+                            <p>Create the home of fashion with upbeat &amp; pulsating designs of furniture.</p>
                             <br />
                             <Button className='button'>Shop Now</Button>
                         </span>
