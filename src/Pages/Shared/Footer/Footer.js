@@ -65,7 +65,7 @@ const Footer = () => {
                         <Col xs={12} md={6}>
                             <p className='copy-right pt-3 m-0'>&#169;Liazul-All Rights Reserved</p>
                         </Col>
-                        <Col className='d-flex justify-content-center pt-3' xs={12} md={6}>
+                        <Col className='d-flex justify-content-center pt-3 pb-3' xs={12} md={6}>
                             <FontAwesomeIcon className='iconBG ' icon={faFacebookF} />
                             <FontAwesomeIcon className='iconBG ms-2' icon={faInstagram} />
                             <FontAwesomeIcon className='iconBG ms-2' icon={faTwitter} />

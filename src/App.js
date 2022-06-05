@@ -8,9 +8,9 @@ import Register from './Pages/Login/Register/Register';
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import ShoppingCart from './Pages/ShoppingCart/ShoppingCart';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
-import Admin from './Pages/Admin/Admin';
 import Products from './Pages/Products/Products';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import Admin from './Pages/Admin/Admin/Admin';
 
 
 function App() {

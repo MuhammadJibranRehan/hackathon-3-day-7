@@ -1,9 +1,9 @@
 .footerDiv {
-    height: 532px;
+    height: auto;
 }
 
 .footerbody {
-    height: 479px;
+    height: auto;
     background-color: #EEEFFB;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .footerBottom {
-    height: 53px;
+    height: auto;
     background-color: #E7E4F8;
 }
 

@@ -15,13 +15,14 @@ const ShoppingCart = () => {
 
     const { state: { cart }, dispatch } = useCartContext();
 
+    // console.log(cart);
 
     let subTotal = 0;
     for (const item of cart) {
         if (!item.quantity) {
             item.quantity = 1;
         }
-        subTotal += item.price * item.quantity;
+        subTotal += parseInt(item.price) * item.quantity;
 
     }
     const shipping = subTotal ? 10 : 0;
@@ -118,7 +119,7 @@ const ShoppingCart = () => {
                                                     </span>
                                                 </div>
                                                 <div className='d-flex justify-content-center align-items-center'>
-                                                    <p className='itemPrice me-1'>$<span>{product.price.toFixed(2)}</span></p>
+                                                    <p className='itemPrice me-1'>$<span>{parseInt(product.price).toFixed(2)}</span></p>
                                                 </div>
                                             </div>
                                         </Col>
@@ -148,7 +149,7 @@ const ShoppingCart = () => {
                                                 </div>
 
                                                 <div className='d-flex justify-content-center align-items-center'>
-                                                    <p className='itemPrice '>$<span>{(product.price * product.quantity).toFixed(2)}</span></p>
+                                                    <p className='itemPrice '>$<span>{(parseInt(product.price) * product.quantity).toFixed(2)}</span></p>
                                                 </div>
                                             </div>
                                         </Col>
@@ -165,7 +166,7 @@ const ShoppingCart = () => {
                                 <div className='cartTotals'>
                                     <div className='p-4'>
                                         <div className='d-flex justify-content-between'>
-                                            <h5>Subtotals:</h5>
+                                            <h5>Subtotal:</h5>
                                             <h5><span>$</span>{subTotal.toFixed(2)}</h5>
                                         </div>
                                         <hr />
@@ -180,7 +181,7 @@ const ShoppingCart = () => {
                                         </div>
                                         <hr />
                                         <div className='d-flex justify-content-between'>
-                                            <h5>Totals:</h5>
+                                            <h5>Total:</h5>
                                             <h5><span>$</span>{grandTotal.toFixed(2)}</h5>
                                         </div>
                                         <hr />
@@ -188,7 +189,7 @@ const ShoppingCart = () => {
                                             <input className=' mt-2 me-1' type="checkbox" checked='checked' name="check" value="" id='check' />
                                             <label for='check' data-content="Shipping &amp; taxes calculated at checkout">Shipping &amp; taxes calculated at checkout</label>
                                         </div>
-                                        <button className='checkoutBtn mt-3'>Proceed To Checkout</button>
+                                        <button onClick={() => alert("The checkout page has not yet been created.")} className='checkoutBtn mt-3'>Proceed To Checkout</button>
                                     </div>
                                 </div>
 

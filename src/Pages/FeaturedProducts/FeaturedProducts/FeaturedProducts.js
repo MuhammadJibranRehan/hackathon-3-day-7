@@ -8,6 +8,8 @@ import './FeaturedProducts.css';
 const FeaturedProducts = () => {
     const [products] = useProducts();
 
+    // console.log(products);
+
     return (
         <Container>
             <div>

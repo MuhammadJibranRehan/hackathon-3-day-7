@@ -104,7 +104,7 @@
 
 /*------------cart totals----- */
 .cartTotals {
-    height: 260px;
+    height: auto;
     background-color: #F4F4FC;
     border-radius: 3px;
     margin-bottom: 40px;

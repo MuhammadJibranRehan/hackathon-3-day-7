@@ -37,8 +37,8 @@ const LeatestProductCard = (props) => {
                 <div className='d-flex justify-content-between align-items-center pdfooter'>
                     <h6 className='pdname'>{title}</h6>
                     <div className='d-flex align-items-center mt-2'>
-                        <p className='spPrice pe-2'>$<span>{price.toFixed(2)}</span></p>
-                        <p className='rePrice'><s>$<span>{regulerPrice.toFixed(2)}</span></s></p>
+                        <p className='spPrice pe-2'>$<span>{parseInt(price).toFixed(2)}</span></p>
+                        <p className='rePrice'><s>$<span>{parseInt(regulerPrice).toFixed(2)}</span></s></p>
                     </div>
                 </div>
             </div>

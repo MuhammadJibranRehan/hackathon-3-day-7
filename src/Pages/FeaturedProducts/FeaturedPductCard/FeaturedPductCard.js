@@ -64,7 +64,7 @@ const FeaturedPductCard = (props) => {
                         <span></span>
                     </div>
                     <h6>Code - {code}</h6>
-                    <h6>${price.toFixed(2)}</h6>
+                    <h6>${parseInt(price).toFixed(2)}</h6>
                 </div>
             </div>
         </div>
