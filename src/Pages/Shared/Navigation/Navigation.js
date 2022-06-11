@@ -29,6 +29,9 @@ const Navigation = () => {
                             <Nav.Link as={HashLink} to='/about-us'><h6 className={
                                 page === '/about-us' || page === '/about-us/' ? "navigation-font  fs-5 active" : "navigation-font  fs-5"
                             } >About Us</h6></Nav.Link>
+                            <Nav.Link as={HashLink} to='/dashboard'><h6 className={
+                                page === '/dashboard' || page === '/dashboard/' ? "navigation-font  fs-5 active" : "navigation-font  fs-5"
+                            } >Dashboard</h6> </Nav.Link>
                             <Nav.Link as={HashLink} to='/admin'><h6 className={
                                 page === '/admin' || page === '/admin/' ? "navigation-font  fs-5 active" : "navigation-font  fs-5"
                             } >Admin</h6> </Nav.Link>

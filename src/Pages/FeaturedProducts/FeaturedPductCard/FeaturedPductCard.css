@@ -1,7 +1,8 @@
 .featuredCard {
     height: 385px;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 8px 3px #ebebeb;
+    margin: 1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .fCard-header {

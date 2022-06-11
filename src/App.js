@@ -11,6 +11,8 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Products from './Pages/Products/Products';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import Admin from './Pages/Admin/Admin/Admin';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+
 
 
 function App() {
@@ -34,6 +36,9 @@ function App() {
             </Route>
             <PrivateRoute path='/cart'>
               <ShoppingCart></ShoppingCart>
+            </PrivateRoute>
+            <PrivateRoute path='/dashboard'>
+              <Dashboard></Dashboard>
             </PrivateRoute>
             <PrivateRoute path='/admin'>
               <Admin></Admin>

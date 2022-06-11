@@ -8,7 +8,7 @@ import ShopexOffer from '../../ShopexOffer/ShopexOffer/ShopexOffer';
 import UniqueFeatureBanner from '../../UniqueFeatureBanner/UniqueFeatureBanner';
 import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
-import Testimonials from '../../Testimonials/Testimonials/Testimonials';
+import Testimonials from '../../Testimonials/Testimonials';
 
 
 
@@ -25,7 +25,6 @@ const Home = () => {
             <ShopexOffer></ShopexOffer>
             <UniqueFeatureBanner></UniqueFeatureBanner>
             <Testimonials></Testimonials>
-            <HashSpinner></HashSpinner>
             <Footer></Footer>
         </>
     );

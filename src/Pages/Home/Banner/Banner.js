@@ -3,6 +3,7 @@ import { Button, Col, Image, Row } from 'react-bootstrap';
 import bannerSofa from './../../../Images/sofa promotional header.png';
 import bannerLight from './../../../Images/banner-light.png';
 import './Banner.css';
+import { NavLink } from 'react-router-dom';
 
 
 const Banner = () => {
@@ -21,7 +22,7 @@ const Banner = () => {
                             <h1>Trends in 2022</h1>
                             <p>Create the home of fashion with upbeat &amp; pulsating designs of furniture.</p>
                             <br />
-                            <Button className='button'>Shop Now</Button>
+                            <NavLink to="/products"><Button className='button'>Shop Now</Button></NavLink>
                         </span>
                     </Col>
 

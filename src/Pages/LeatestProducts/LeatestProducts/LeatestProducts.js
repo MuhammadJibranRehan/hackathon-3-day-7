@@ -3,6 +3,15 @@ import { Container, Row } from 'react-bootstrap';
 import LeatestProductCard from '../LeatestProductCard/LeatestProductCard';
 import useProducts from '../../../Hooks/useProducts';
 import './LeatestProducts.css';
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation } from "swiper";
+
 
 const LeatestProducts = () => {
     const [products] = useProducts();
@@ -18,14 +27,36 @@ const LeatestProducts = () => {
                 </div>
             </div>
             <Row>
-                {
-                    products.filter(nAvl => nAvl.subCategory === "New Arrival").map(nAvl =>
-                        <LeatestProductCard
-                            key={nAvl._id}
-                            nAvl={nAvl}
-                        ></LeatestProductCard>
-                    )
-                }
+                <Swiper
+                    slidesPerView={1}
+                    spaceBetween={10}
+                    slidesPerGroup={1}
+                    breakpoints={{
+                        481: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        769: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+
+                    }}
+                    navigation={true}
+                    modules={[Navigation]}
+
+                >
+                    {
+                        products.filter(nAvl => nAvl.subCategory === "New Arrival").map(nAvl =>
+                            <SwiperSlide>
+                                <LeatestProductCard
+                                    key={nAvl._id}
+                                    nAvl={nAvl}
+                                ></LeatestProductCard>
+                            </SwiperSlide>
+                        )
+                    }
+                </Swiper>
             </Row>
         </Container>
     );

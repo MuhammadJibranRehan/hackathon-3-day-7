@@ -1,20 +1,23 @@
-.pdbody{
+.pdbody {
     height: 270px;
     background-color: #F7F7F7;
 }
 
-.l-icon{
+.l-icon {
     margin-right: 90%;
+    margin-top: 7px;
 }
-.l-icon img{
+
+.l-icon img {
     display: none;
 }
 
 
-.pdfooter{
+.pdfooter {
     height: 36px;
 }
-.pdname{
+
+.pdname {
     margin: 0;
     padding-bottom: 4px;
     border-bottom: 2px solid #EEEFFB;
@@ -22,27 +25,34 @@
     font-size: 16px;
     color: #151875;
 }
-.spPrice{
+
+.spPrice {
     font-family: 'Josefin Sans';
     font-size: 16px;
     color: #151875;
 }
-.rePrice{
+
+.rePrice {
     font-family: 'Josefin Sans';
     font-size: 14px;
     color: #FB2448;
 }
-.pd:hover .pdbody{
-    background-color: #F1F0FF;
+
+.pd:hover .pdbody {
+    background-color: #ffdd99;
 }
-.pd:hover .pdbody .l-icon img{
+
+.pd:hover .pdname {
+    border-bottom: 2px solid #ffaf0f;
+}
+
+.pd:hover .pdbody .l-icon img {
     display: block;
     margin-bottom: 7px;
     padding: 5px;
     border-radius: 50%;
 }
-.pd:hover .pdbody .l-icon img:hover{
+
+.pd:hover .pdbody .l-icon img:hover {
     background-color: #fbfbfb;
 }
-
-

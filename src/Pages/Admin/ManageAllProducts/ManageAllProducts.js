@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Image, Table } from 'react-bootstrap';
+import './ManageAllProducts.css';
 
 const ManageAllProducts = () => {
-    const [products, setProducts] = useState([]);
+    const [products] = useState([]);
 
     const handleDelete = id => {
         // console.log(id);
@@ -25,7 +26,7 @@ const ManageAllProducts = () => {
     return (
         <>
             <div className="container">
-                <h2>All Tours ({products.length})</h2>
+                <h2>Manage All Products ({products.length})</h2>
 
                 <Table striped bordered hover>
                     <thead>
