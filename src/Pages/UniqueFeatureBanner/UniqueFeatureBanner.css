@@ -1,57 +1,63 @@
-.uniqueBanner{
-    background-color: #F1F0FF;
-    height: 579px;
-    margin-top: 130px;
+.uniqueBanner {
+  background-color: #f1f0ff;
+  margin-top: 130px;
+  padding: 40px 0;
 }
-.uniqueBnnrDetails .pinkPoint{
-    height: 11px;
-    width: 11px;
-    border-radius: 50%;
-    background-color: #F52B70;
 
+.uniqueH2text {
+  font-family: "Josefin Sans";
+  font-size: 35px;
+  color: #151b75;
+  font-weight: 700;
 }
-.uniqueBnnrDetails .bluePoint{
-    height: 11px;
-    width: 11px;
-    border-radius: 50%;
-    background-color: #2B2BF5;
-
+.pointTextColor {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 500;
+  color: #acabc3;
 }
-.uniqueBnnrDetails .greenPoint{
-    height: 11px;
-    width: 11px;
-    border-radius: 50%;
-    background-color: #2BF5CC;
-
+.pinkPoint::before {
+  display: inline-block;
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background-color: #f52b70;
+  margin-right: 6px;
 }
-.uniqueH2text{
-font-family: 'Josefin Sans';
-font-size: 35px;
-color: #151B75;
-font-weight: 700;
+.bluePoint::before {
+  display: inline-block;
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background-color: #2b2bf5;
+  margin-right: 6px;
 }
-.pointTextColor{
-    font-family: 'Lato';
-    font-size: 16px;
-    font-weight: 500;
-    color: #ACABC3;
-
+.greenPoint::before {
+  display: inline-block;
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background-color: #2bf5cc;
+  margin-right: 6px;
 }
-.uniqueButton{
-    background-color: #FB2E86;
-    border-color: #FB2E86;
-    border-radius: 2px;
-    padding-top: 0;
-    padding-bottom: 0;
+.uniqueButton {
+  background-color: #fb2e86;
+  border-color: #fb2e86;
+  border-radius: 2px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.italianSofa{
-    font-family: 'Josefin Sans';
-    font-size: 16px;
-    color: #151B75;
+.italianSofa {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  color: #151b75;
 }
-.italianSofaPrice{
-    font-family: 'Lato';
-    font-weight: 400;
-    font-size: 16px;
-    color: #151B75;
+.italianSofaPrice {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #151b75;
 }

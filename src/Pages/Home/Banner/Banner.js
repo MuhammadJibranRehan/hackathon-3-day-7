@@ -12,14 +12,14 @@ const Banner = () => {
             <Row className='banner-style'>
                 <Col className='d-flex align-items-center' xs={12} md={6}>
 
-                    <Col className='align-self-start' xs={0} md={4}>
+                    <Col className='align-self-start' xs={0} md={0} lg={0} xl={4}>
                         <Image className='img-fluid ' src={bannerLight} alt='' />
                     </Col>
-                    <Col xs={12} md={8} className='py-5'>
+                    <Col xs={12} md={12} lg={12} xl={8} className='py-5'>
                         <span className='banner-content-container'>
                             <h6>Best Furniture For Your Castle....</h6>
                             <h1>New Furniture Collection</h1>
-                            <h1>Trends in 2022</h1>
+                            <h1>Trends in {new Date().getFullYear()}</h1>
                             <p>Create the home of fashion with upbeat &amp; pulsating designs of furniture.</p>
                             <br />
                             <NavLink to="/products"><Button className='button'>Shop Now</Button></NavLink>
