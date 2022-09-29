@@ -3,25 +3,18 @@ import { Button } from 'react-bootstrap';
 import cartIcon from '../../../Images/featuredIcon/fluent_cart-24-regular.svg';
 import heartIcon from '../../../Images/featuredIcon/uil_heart-alt.svg';
 import searchPlusIcon from '../../../Images/featuredIcon/search-plus.svg';
+import { Link } from 'react-router-dom';
 import './FeaturedPductCard.css';
-import { useCartContext } from '../../../Contexts/CartContext/CartContext';
-
-
 
 
 const FeaturedPductCard = (props) => {
 
-    const {
-        // state: {  },
-        dispatch,
-    } = useCartContext();
+
 
 
     // console.log(props.fPd);
     const item = props.fPd;
-    const { title, thumbnail, code, price } = item;
-
-
+    const { _id, title, thumbnail, code, price } = item;
 
     return (
 
@@ -31,13 +24,7 @@ const FeaturedPductCard = (props) => {
                 <div className='d-flex f-Icon'>
 
 
-                    <img className='img-fluid f-cartIcon mt-2 ms-2' onClick={() =>
-                        dispatch({
-                            type: "ADD_TO_CART",
-                            payload: item,
-                        })
-                    }
-                        src={cartIcon} alt="" />
+                <Link to={`/purchase/${_id}`}><img className='img-fluid f-cartIcon mt-2 ms-2' src={cartIcon} alt="" /></Link>
 
 
                     {/* <img className='img-fluid f-cartIcon mt-2 ms-2' onClick={addToCart} src={cartIcon} alt="" /> */}
@@ -49,7 +36,7 @@ const FeaturedPductCard = (props) => {
                         <img className='img-fluid' src={thumbnail} alt="" />
                     </div>
                     <div className='d-flex justify-content-center mt-1'>
-                        <Button className='fpd-view-dtails mt-4'>View Details</Button>
+                        <Link className='view-details-link' to={`/purchase/${_id}`}><Button className='fpd-view-dtails mt-4'>View Details</Button></Link>
                     </div>
                 </div>
             </div>

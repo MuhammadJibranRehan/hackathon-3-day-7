@@ -1,0 +1,79 @@
+.order-complete-main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.ordercomplete {
+    height: auto;
+}
+
+.completeStatus {
+    height: 60%;
+    width: 90%;
+    position: relative;
+}
+
+.dashed-container {
+    /* padding: 0 4vw 0 4vw; */
+    padding-bottom: 50px;
+    height: 90%;
+    width: 90%;
+    /* border: 1px solid saddlebrown; */
+    border-left: 1px dashed lightgray;
+    border-bottom: 1px dashed lightgray;
+    margin: 0 4%;
+}
+
+.dashed-container p {
+    color: #8D92A7;
+}
+
+.dashed-container h3 {
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    color: #101750;
+}
+
+
+.right-img {
+    height: auto;
+    max-width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.clock-img {
+    height: auto;
+    max-width: 10vw;
+    position: absolute;
+    left: 0;
+    top: -12%;
+}
+
+.checklist-img {
+    height: auto;
+    max-width: 10vw;
+    position: absolute;
+    bottom: -8%;
+    right: 1%;
+}
+
+
+.btn-continue-shopping {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FF1788;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.btn-continue-shopping:hover {
+    background-color: #e0317d;
+}

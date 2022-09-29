@@ -18,12 +18,11 @@ const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://gentle-taiga-66433.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
 
     }, [reviews])
-
 
     return (
         <section>
@@ -52,8 +51,7 @@ const Testimonials = () => {
                     >
                         {reviews.map(review =>
 
-                            <SwiperSlide>
-
+                            <SwiperSlide key={review._id}>
                                 <div className='testimonial p-3 mb-5'>
 
                                     <div className=' text-center'>

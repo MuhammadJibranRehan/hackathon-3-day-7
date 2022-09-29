@@ -1,0 +1,53 @@
+.bgimg {
+    background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+.bgimg h1 {
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.timer div:first-child {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+section p:first-child,
+.timer div:first-child span {
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    .timer div:first-child {
+        margin-top: 100px;
+        margin-right: 2em;
+        padding: 3em 1em;
+    }
+}

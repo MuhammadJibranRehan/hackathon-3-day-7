@@ -1,70 +1,137 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React from 'react';
 import './Dashboard.css';
-import { faBagShopping, faCreditCard, faMessage, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import Review from '../Review/Review';
-import MyOrders from '../MyOrders/MyOrders';
-import PayNow from '../PayNow/PayNow';
-
+import { faBagShopping, faCartPlus, faChartColumn, faCreditCard, faListCheck, faMessage, faRightToBracket, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { NavLink, Route, Switch, useRouteMatch } from 'react-router-dom';
+import Review from '../User/Review/Review';
+import MyOrders from '../User/MyOrders/MyOrders';
+import PayNow from '../User/PayNow/PayNow';
+import DashboardHome from '../DashboardHome/DashboardHome';
+import AddNewProduct from '../Admin/AddNewProduct/AddNewProduct';
+import ManageAllProducts from '../Admin/ManageAllProducts/ManageAllProducts';
+import ManageOrders from '../Admin/ManageOrders/ManageOrders';
+import MakeAdmin from '../Admin/MakeAdmin/MakeAdmin';
+import useAuth from '../../../Hooks/useAuth';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 const Dashboard = () => {
 
-    const [control, setControl] = useState("MyOrders");
-
-
-
-
+    const { admin, logOut } = useAuth();
+    let { path, url } = useRouteMatch();
 
 
     return (
         <>
-            {/* ...................Admin Dashboard...................... */}
-            <div>
-                <div className="admin-container">
-                    <div className="dashboard">
-                        <div className="admin-box">
-                            <div className="row admin-container">
-                                <div className="col-md-2 p-0">
-                                    <div className="admin-area ">
-                                        <div className='dashboard-logo'>
-                                            <h1 className='mt-2 mb-0 fw-bold'>Hekto</h1>
-                                            <p className='m-0 text-black'>User Dashboard</p>
-                                        </div>
-                                        <hr />
-                                        <div className="all-menu ms-2">
-                                            <li onClick={() => setControl("MyOrders")} className="admin-menu  " >
+            {/* ................... Dashboard...................... */}
+            <div className="dashboard-container">
+                <div className="row">
+                    <div className="dashboard-menu col-md-2 p-0">
+                        <NavLink exact to='/' className='text-decoration-none' >
 
-                                                <FontAwesomeIcon className='dashboard-icon' icon={faBagShopping} /> My Orders
-
-                                            </li>
-
-                                            <li onClick={() => setControl("PayNow")} className="admin-menu ">
-                                                <FontAwesomeIcon className='dashboard-icon' icon={faCreditCard} /> Pay Now
-                                            </li>
-                                            <li onClick={() => setControl("Review")} className="admin-menu "  >
-                                                <FontAwesomeIcon className='dashboard-icon' icon={faMessage} /> Review
-                                            </li>
-                                            <Link className='exitLink' as={HashLink} to='/'>
-                                                <li className="admin-menu ">
-                                                    <FontAwesomeIcon className='dashboard-icon' icon={faRightToBracket} /> Exit
-                                                </li>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="dashboard-body col-md-10 text-center p-0 text-center m-0">
-                                    {control === "MyOrders" && <MyOrders></MyOrders>}
-                                    {control === "PayNow" && <PayNow></PayNow>}
-                                    {control === "Review" && <Review></Review>}
-                                </div>
+                            <div className='dashboard-logo'>
+                                <h1 className='mt-2 mb-2 mb-0 fw-bold'>Hekto</h1>
                             </div>
+                        </NavLink>
+                        <hr />
+                        <div className="all-menu ms-2">
+                            <ul>
+                                {!admin && <span>
+                                    <NavLink exact to={`${url}`} className='dashboard-link' activeClassName="selected">
+                                        <li>
+                                            <FontAwesomeIcon className='dashboard-icon' icon={faChartColumn} />  Dashboard
+                                        </li>
+                                    </NavLink>
+
+                                    <NavLink exact to={`${url}/my-orders`} className='dashboard-link' activeClassName="selected">
+                                        <li>
+                                            <FontAwesomeIcon className='dashboard-icon' icon={faBagShopping} />  My Orders
+                                        </li>
+                                    </NavLink>
+
+                                    <NavLink exact to={`${url}/pay-now`} className='dashboard-link' activeClassName="selected">
+                                        <li>
+                                            <FontAwesomeIcon className='dashboard-icon' icon={faCreditCard} />Pay Now
+                                        </li>
+                                    </NavLink>
+
+                                    <NavLink exact to={`${url}/review`} className='dashboard-link' activeClassName="selected">
+                                        <li>
+                                            <FontAwesomeIcon className='dashboard-icon' icon={faMessage} />Review
+                                        </li>
+                                    </NavLink>
+                                </span>}
+
+                                {/*--------------------------- admin ---------------------- */}
+                                {admin && <span>
+                                    <NavLink exact to={`${url}`} className='dashboard-link' activeClassName="selected">
+                                        <li>
+                                            <FontAwesomeIcon className='dashboard-icon' icon={faChartColumn} />  Dashboard
+                                        </li>
+                                    </NavLink>
+                                    <NavLink exact to={`${url}/add-new-product`} className='dashboard-link' activeClassName="selected">
+                                        <li>
+                                            <FontAwesomeIcon className='dashboard-icon' icon={faCartPlus} />Add new product
+                                        </li>
+                                    </NavLink>
+                                    <NavLink exact to={`${url}/manage-all-products`} className='dashboard-link' activeClassName="selected">
+                                        <li>
+                                            <FontAwesomeIcon className='dashboard-icon' icon={faListCheck} />Manage all products
+                                        </li>
+                                    </NavLink>
+                                    <NavLink exact to={`${url}/manage-orders`} className='dashboard-link' activeClassName="selected">
+                                        <li>
+                                            <FontAwesomeIcon className='dashboard-icon' icon={faBagShopping} />   Manage orders
+                                        </li>
+                                    </NavLink>
+                                    <NavLink exact to={`${url}/make-admin`} className='dashboard-link' activeClassName="selected">
+                                        <li>
+                                            <FontAwesomeIcon className='dashboard-icon' icon={faUserPlus} />Make admin
+                                        </li>
+                                    </NavLink>
+                                </span>}
+                                <hr />
+
+                                <NavLink to='' onClick={logOut} className='dashboard-link'>
+                                    <li>
+                                        <FontAwesomeIcon className='dashboard-icon' icon={faRightToBracket} />Log Out
+                                    </li>
+                                </NavLink>
+
+                            </ul>
                         </div>
+                    </div>
+
+                    <div className="dashboard-body col-md-10 text-center p-0 text-center m-0">
+                        {/* ...............................Nested Route.....................  */}
+                        <Switch>
+                            <Route exact path={path}>
+                                <DashboardHome />
+                            </Route>
+                            <Route path={`${path}/my-orders`}>
+                                <MyOrders />
+                            </Route>
+                            <Route path={`${path}/pay-now`}>
+                                <PayNow />
+                            </Route>
+                            <Route path={`${path}/review`}>
+                                <Review></Review>
+                            </Route>
+                            {/*--------------------------- Admin Route---------------------- */}
+                            <AdminRoute path={`${path}/add-new-product`}>
+                                <AddNewProduct />
+                            </AdminRoute>
+                            <AdminRoute path={`${path}/manage-all-products`}>
+                                <ManageAllProducts />
+                            </AdminRoute>
+                            <AdminRoute path={`${path}/manage-orders`}>
+                                <ManageOrders />
+                            </AdminRoute>
+                            <AdminRoute path={`${path}/make-admin`}>
+                                <MakeAdmin />
+                            </AdminRoute>
+                        </Switch>
                     </div>
                 </div>
             </div>
-
         </>
 
     );

@@ -5,36 +5,31 @@ import './ShoppingCart.css';
 import HeadingBar from '../Shared/HeadingBar/HeadingBar';
 import itemCancel from '../../Images/delete.png';
 import { Col, Container, Row } from 'react-bootstrap';
-import { useCartContext } from '../../Contexts/CartContext/CartContext';
-
-
+import useOrders from '../../Hooks/useOrders';
 
 
 
 const ShoppingCart = () => {
 
-    const { state: { cart }, dispatch } = useCartContext();
+    const [orders] = useOrders();
+    console.log(orders);
 
-    // console.log(cart);
+    // let subTotal = 0;
+    // for (const order of orders) {
+    //     if (!order.quantity) {
+    //         item.quantity = 1;
+    //     }
+    //     subTotal += parseInt(item.price) * item.quantity;
 
-    let subTotal = 0;
-    for (const item of cart) {
-        if (!item.quantity) {
-            item.quantity = 1;
-        }
-        subTotal += parseInt(item.price) * item.quantity;
-
-    }
-    const shipping = subTotal ? 10 : 0;
-    const tax = (subTotal + shipping) * .10;
-    const grandTotal = subTotal + shipping + tax;
-
+    // }
+    // const shipping = subTotal ? 10 : 0;
+    // const tax = (subTotal + shipping) * .10;
+    // const grandTotal = subTotal + shipping + tax;
 
 
 
-    // const removeFromCart = (e, _id) => {
-    //     e.preventDefault();
-    // };
+
+
 
 
 
@@ -50,7 +45,7 @@ const ShoppingCart = () => {
                 </div>
             </div>
             <Container>
-                {cart.length < 1 && (
+                {(orders?.length) < 1 && (
                     <div className="empty-cart text-center">
                         <img className='img-fluid' src="https://i.ibb.co/cNc0Kk0/empty-shopping-cart-4029586-3337625.png" alt="man-running-while-pushing" border="0"></img>
                         <h3 className='emty_cart_h text-center'>Oops! Your cart is empty!</h3>
@@ -59,7 +54,7 @@ const ShoppingCart = () => {
                     </div>
                 )}
 
-                {cart.length >= 1 && (
+                {(orders?.length) >= 1 && (
                     <div>
                         <Row className='mb-4'>
 
@@ -97,29 +92,23 @@ const ShoppingCart = () => {
                         {/*--------------Table  body------------------*/}
                         <Row>
                             <Col xs={12} md={8}>
-                                {cart?.map(product =>
+                                {orders?.map(order =>
                                     <Row>
                                         <Col xs={12} md={6}>
                                             <div className='d-flex justify-content-between'>
                                                 <div className='d-flex align-items-center'>
-                                                    <img className='cart-item-img img-fluid position-relative' src={product.thumbnail} alt="" srcset="" />
+                                                    <img className='cart-item-img img-fluid position-relative' src={order.thumbnail} alt="" srcset="" />
 
-                                                    <img className='position-absulate img-fluid cancel-item' onClick={() =>
-                                                        dispatch({
-                                                            type: "REMOVE_FROM_CART",
-                                                            payload: product,
-                                                        })} src={itemCancel} alt="cancel item" srcset="" />
+                                                    <img className='position-absulate img-fluid cancel-item' src={itemCancel} alt="cancel item" srcset="" />
 
                                                     {/* <img className='position-absulate img-fluid cancel-item' onClick={(e) => removeFromCart(e, product._id)} src={itemCancel} alt="cancel item" srcset="" /> */}
 
                                                     <span className='ms-3'>
-                                                        <p className='itemName m-0'>{product.title}</p>
-                                                        <p className='itemAttributes m-0'>Color: <span>Brown</span></p>
-                                                        <p className='itemAttributes  m-0'>Size: <span>XL</span></p>
+                                                        <p className='itemName m-0'>{order.title}</p>
                                                     </span>
                                                 </div>
                                                 <div className='d-flex justify-content-center align-items-center'>
-                                                    <p className='itemPrice me-1'>$<span>{parseInt(product.price).toFixed(2)}</span></p>
+                                                    <p className='itemPrice me-1'>$<span>{parseInt(order.price).toFixed(2)}</span></p>
                                                 </div>
                                             </div>
                                         </Col>
@@ -127,30 +116,15 @@ const ShoppingCart = () => {
                                             <div className='d-flex justify-content-around my-4'>
 
                                                 <div className='quantity-box d-flex justify-content-between '>
-                                                    <button onClick={() =>
-                                                        dispatch({
-                                                            type: "DECREMENT",
-                                                            payload: product,
-                                                        })
-                                                    } className='minus-btn'>-</button>
+                                                    <button className='minus-btn'>-</button>
 
-                                                    <p id="case-number" className=' text-center'>{product.quantity}</p>
+                                                    <p id="case-number" className=' text-center'>{order.quantity}</p>
 
-                                                    <button onClick={() =>
-                                                        dispatch({
-                                                            type: "INCREMENT",
-                                                            payload: product,
-                                                        })
-                                                    } className='plus-btn'>+</button>
+                                                    <button className='plus-btn'>+</button>
 
-                                                    {/* <button onClick={() => setQuantity(quantity => quantity > 1 ? quantity - 1 : 1)} className='minus-btn'>-</button>
-                                                    <p id="case-number" className=' text-center'>{quantity}</p>
-                                                    <button onClick={() => setQuantity(quantity => quantity + 1)} className='plus-btn'>+</button> */}
+
                                                 </div>
 
-                                                <div className='d-flex justify-content-center align-items-center'>
-                                                    <p className='itemPrice '>$<span>{(parseInt(product.price) * product.quantity).toFixed(2)}</span></p>
-                                                </div>
                                             </div>
                                         </Col>
                                         <span className='mb-3'></span>
@@ -165,7 +139,7 @@ const ShoppingCart = () => {
                             <Col xs={12} md={4}>
                                 <div className='cartTotals'>
                                     <div className='p-4'>
-                                        <div className='d-flex justify-content-between'>
+                                        {/* <div className='d-flex justify-content-between'>
                                             <h5>Subtotal:</h5>
                                             <h5><span>$</span>{subTotal.toFixed(2)}</h5>
                                         </div>
@@ -183,11 +157,11 @@ const ShoppingCart = () => {
                                         <div className='d-flex justify-content-between'>
                                             <h5>Total:</h5>
                                             <h5><span>$</span>{grandTotal.toFixed(2)}</h5>
-                                        </div>
+                                        </div> */}
                                         <hr />
                                         <div className="d-flex">
                                             <input className=' mt-2 me-1' type="checkbox" checked='checked' name="check" value="" id='check' />
-                                            <label for='check' data-content="Shipping &amp; taxes calculated at checkout">Shipping &amp; taxes calculated at checkout</label>
+                                            <label for='check' data-content="Shipping &amp; taxes calculated at checkout">Includes shipping and tax</label>
                                         </div>
                                         <button onClick={() => alert("The checkout page has not yet been created.")} className='checkoutBtn mt-3'>Proceed To Checkout</button>
                                     </div>

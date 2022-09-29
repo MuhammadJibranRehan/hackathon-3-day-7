@@ -51,15 +51,14 @@ const FeaturedProducts = () => {
                     modules={[Navigation]}
 
                 >
-                    {
-                        products.filter(fPd => fPd.category === 'Featured').map(fPd =>
-                            <SwiperSlide>
-                                <FeaturedPductCard
-                                    key={fPd._id}
-                                    fPd={fPd}
-                                ></FeaturedPductCard>
-                            </SwiperSlide>
-                        )
+                    {products.filter(fPd => fPd.category === 'Featured').map(fPd =>
+                        <SwiperSlide key={fPd._id}>
+                            <FeaturedPductCard
+
+                                fPd={fPd}
+                            ></FeaturedPductCard>
+                        </SwiperSlide>
+                    )
                     }
                 </Swiper>
             </div>

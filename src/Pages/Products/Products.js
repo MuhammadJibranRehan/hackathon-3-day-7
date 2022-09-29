@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
-import { useCartContext } from '../../Contexts/CartContext/CartContext';
+import { Link } from 'react-router-dom';
 import useProducts from '../../Hooks/useProducts';
 import Footer from '../Shared/Footer/Footer';
 import HeadingBar from '../Shared/HeadingBar/HeadingBar';
@@ -10,47 +10,29 @@ import heartIcon from '../../Images/featuredIcon/uil_heart-alt.svg';
 import searchPlusIcon from '../../Images/featuredIcon/search-plus.svg';
 import './Products.css';
 
+
 const Products = () => {
 
     const [products] = useProducts();
-    const {
-        // state: {  },
-        dispatch,
-    } = useCartContext();
-
+    
     return (
         <>
 
             <HeadingBar></HeadingBar>
             <Navigation></Navigation>
 
-
-            {/* <div className='myAccount d-flex align-items-center mb-5'>
-                <div className='container '>
-                    <h2>My Account</h2>
-                    <p>Home. Pages. <span>Products</span></p>
-                </div>
-            </div> */}
             {/* ....................All Products........................ */}
             <Container >
 
                 <section className='row pt-1'>
                     {products.map(product =>
-                        <div className='col-lg-3 col-md-6 md-12 g-4'>
+                        <div key={product._id} className='col-lg-3 col-md-6 md-12 g-4'>
                             <div className='featuredCard'>
                                 <div className='fCard-header'>
                                     <div className='d-flex f-Icon'>
 
 
-                                        <img className='img-fluid f-cartIcon mt-2 ms-2' onClick={() =>
-                                            dispatch({
-                                                type: "ADD_TO_CART",
-                                                payload: product,
-                                            })
-                                        }
-                                            src={cartIcon} alt="" />
-
-
+                                    <Link to={`/purchase/${product._id}`}><img className='img-fluid f-cartIcon mt-2 ms-2' src={cartIcon} alt="" /></Link>
                                         {/* <img className='img-fluid f-cartIcon mt-2 ms-2' onClick={addToCart} src={cartIcon} alt="" /> */}
                                         <img className='img-fluid f-heartIcon mt-2' src={heartIcon} alt="" />
                                         <img className='img-fluid f-searchPlus mt-2' src={searchPlusIcon} alt="" />
@@ -60,7 +42,7 @@ const Products = () => {
                                             <img className='img-fluid' src={product.thumbnail} alt="" />
                                         </div>
                                         <div className='d-flex justify-content-center mt-1'>
-                                            <Button className='fpd-view-dtails mt-4'>View Details</Button>
+                                            <Link className='view-details-link' to={`/purchase/${product._id}`}><Button className='fpd-view-dtails mt-4'>View Details</Button></Link>
                                         </div>
                                     </div>
                                 </div>

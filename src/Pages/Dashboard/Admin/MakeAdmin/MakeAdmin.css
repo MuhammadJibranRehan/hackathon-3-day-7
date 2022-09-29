@@ -1,0 +1,30 @@
+.make-admin-main form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.make-admin-main form input:nth-child(1) {
+    width: 30%;
+    padding: 5px 15px 7px 5px;
+    border: none;
+    border-bottom: 1px solid#000000;
+    outline: none;
+}
+
+.make-admin-main form input:nth-child(2) {
+    padding: 5px 10px;
+}
+
+.make-admin-button {
+    border-radius: 5px 5px 5px 0;
+    background-color: #FB2E86;
+    border-color: #FB2E86;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+.make-admin-button:hover {
+    background-color: #e0317d;
+}

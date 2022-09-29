@@ -5,20 +5,22 @@ import Navigation from '../../Shared/Navigation/Navigation';
 import { useForm } from "react-hook-form";
 import './Login.css';
 import useAuth from '../../../Hooks/useAuth';
-import { useLocation } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
 import Footer from '../../Shared/Footer/Footer';
+import { useHistory, useLocation } from 'react-router';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-    const location = useLocation();
-    const history = useHistory();
-
     const { loginUser } = useAuth();
+
+    const location = useLocation()
+    const history = useHistory()
+    const redirect_uri = location.state?.from || '/'
+
     const onSubmit = async data => {
-        // await console.log(data);
-        await loginUser(data.email, data.password, location, history);
+        const email = data.email;
+        const password = data.password;
+        await loginUser(email, password, history, redirect_uri);
         reset();
     };
 

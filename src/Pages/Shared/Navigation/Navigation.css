@@ -1,39 +1,53 @@
-.logo-font{
+.logo-font {
     font-family: 'Josefin Sans';
     font-size: 34px;
     line-height: 40px;
     font-weight: 700;
     width: 98px;
-    color:#0D0E43;
+    color: #0D0E43;
 }
-.navigation-font{
+
+
+.navbar-light .navbar-brand:hover {
+    color: #FB2E86;
+    transition: 0.4s;
+}
+
+.navigation-font {
     font-family: 'Lato';
     font-size: 22px;
     font-weight: 500;
-    color:#0D0E43;  
+    color: #0D0E43;
 }
 
-.navigation-font:hover{
+.navigation-font:hover {
     color: #FB2E86;
+    transition: 0.4s;
 }
-.active{
+
+.active {
     color: #FB2E86;
     border-bottom: 2px solid #FB4997;
 }
 
-.search-input{
+.search-input {
     width: 300px;
     border-radius: 3px;
     outline: none;
     border: 1px solid #E7E6EF;
-  }
-.search-button{
+}
+
+.search-button {
     height: 40px;
     background-color: #FB2E86;
     border: 1px solid #FB2E86;
     border-radius: 3px;
-  }
-  
+}
+
+.search-button:hover {
+    background-color: #e0317d;
+    transition: 0.4s;
+}
 
 /* .hv:hover{
     background-color: chocolate;

@@ -10,6 +10,10 @@
     background-color: #F6F7FB;
 }
 
+.view-details-link {
+    text-decoration: none;
+}
+
 .fpd-view-dtails,
 .f-cartIcon,
 .f-heartIcon,

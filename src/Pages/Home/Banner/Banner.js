@@ -12,11 +12,11 @@ const Banner = () => {
             <Row className='banner-style'>
                 <Col className='d-flex align-items-center' xs={12} md={6}>
 
-                    <Col className='align-self-start' xs={4} md={4}>
+                    <Col className='align-self-start' xs={0} md={4}>
                         <Image className='img-fluid ' src={bannerLight} alt='' />
                     </Col>
-                    <Col xs={8} md={8}>
-                        <span className='banner-text'>
+                    <Col xs={12} md={8} className='py-5'>
+                        <span className='banner-content-container'>
                             <h6>Best Furniture For Your Castle....</h6>
                             <h1>New Furniture Collection</h1>
                             <h1>Trends in 2022</h1>
@@ -28,7 +28,7 @@ const Banner = () => {
 
                 </Col>
                 <Col className='align-self-center' xs={12} md={6}>
-                    <Image className='img-fluid ' src={bannerSofa} alt='' />
+                    <Image className='img-fluid py-5' src={bannerSofa} alt='' />
                 </Col>
             </Row>
         </>

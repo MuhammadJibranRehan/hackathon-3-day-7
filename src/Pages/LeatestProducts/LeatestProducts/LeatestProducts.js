@@ -48,9 +48,9 @@ const LeatestProducts = () => {
                 >
                     {
                         products.filter(nAvl => nAvl.subCategory === "New Arrival").map(nAvl =>
-                            <SwiperSlide>
+                            <SwiperSlide key={nAvl._id}>
                                 <LeatestProductCard
-                                    key={nAvl._id}
+
                                     nAvl={nAvl}
                                 ></LeatestProductCard>
                             </SwiperSlide>

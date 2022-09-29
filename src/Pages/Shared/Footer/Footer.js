@@ -63,7 +63,7 @@ const Footer = () => {
                 <Container>
                     <Row>
                         <Col xs={12} md={6}>
-                            <p className='copy-right pt-3 m-0'>&#169;Liazul-All Rights Reserved</p>
+                            <p className='copy-right pt-3 m-0'>Copyright &#169; {new Date().getFullYear()} Developed by <span>&#10084;</span> <a className='text-decoration-none author' href='https://www.linkedin.com/in/liazul'>Liazul Islam</a> </p>
                         </Col>
                         <Col className='d-flex justify-content-center pt-3 pb-3' xs={12} md={6}>
                             <FontAwesomeIcon className='iconBG ' icon={faFacebookF} />

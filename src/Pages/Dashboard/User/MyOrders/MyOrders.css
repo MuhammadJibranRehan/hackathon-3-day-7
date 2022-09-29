@@ -1,0 +1,29 @@
+.myOrder {
+    height: 100vh;
+}
+
+.order-image {
+    height: 50px;
+    width: 50px;
+}
+
+.btn-delete {
+    border-radius: 6px;
+    background-color: #FB2E86;
+    border-color: #FB2E86;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+.btn-delete:hover {
+    background-color: #e0317d;
+}
+td{
+    vertical-align: middle;
+}
+td .status{
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: rgb(0, 104, 74);
+    background-color: rgb(227, 252, 247);
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import FeaturedProducts from '../../FeaturedProducts/FeaturedProducts/FeaturedProducts';
 import LeatestProducts from '../../LeatestProducts/LeatestProducts/LeatestProducts';
-import HashSpinner from '../../Shared/HashSpinner/HashSpinner';
 import HeadingBar from '../../Shared/HeadingBar/HeadingBar';
 import Navigation from '../../Shared/Navigation/Navigation';
 import ShopexOffer from '../../ShopexOffer/ShopexOffer/ShopexOffer';

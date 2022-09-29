@@ -1,0 +1,17 @@
+.img {
+    height: 50px;
+    width: 60px;
+}
+
+.btn-delete {
+    border-radius: 6px;
+    background-color: #FB2E86;
+    border-color: #FB2E86;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+.btn-delete:hover {
+    /* color: #c8c8c8; */
+    background-color: #e0317d;
+}

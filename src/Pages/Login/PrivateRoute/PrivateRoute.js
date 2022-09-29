@@ -1,11 +1,12 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
-import HashSpinner from '../../Shared/HashSpinner/HashSpinner';
+import Spinner from '../../Shared/Spinner/Spinner';
+
 
 const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth();
-    if (isLoading) { return <HashSpinner></HashSpinner> }
+    if (isLoading) { return <Spinner></Spinner> }
     return (
         <Route
             {...rest}

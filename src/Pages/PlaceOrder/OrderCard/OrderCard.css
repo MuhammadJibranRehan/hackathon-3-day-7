@@ -1,0 +1,9 @@
+.order-card-img {
+    width: 100px;
+    height: 100px;
+}
+
+.order-delete:hover {
+    color: #FB2E86;
+    cursor: pointer;
+}

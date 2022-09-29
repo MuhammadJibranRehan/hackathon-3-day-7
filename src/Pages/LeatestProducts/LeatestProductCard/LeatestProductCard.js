@@ -1,32 +1,21 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
-import { useCartContext } from '../../../Contexts/CartContext/CartContext';
+import { Link } from 'react-router-dom';
 import cartIcon from '../../../Images/NewArrival/fluent_cart-24-regular.svg';
 import heartIcon from '../../../Images/NewArrival/uil_heart-alt.svg';
 import searchIcon from '../../../Images/NewArrival/uil_search-plus.svg';
 import './LeatestProductCard.css';
 
 const LeatestProductCard = (props) => {
-    const { title, thumbnail, price, regulerPrice } = props.nAvl;
-
-    const {
-        // state: {  },
-        dispatch,
-    } = useCartContext();
+    const {_id, title, thumbnail, price, regulerPrice } = props.nAvl;
 
     return (
-
-
-        // <Col xs={12} md={6} lg={4} className='g-4'>
+    <>
+        
         <div className='pd'>
             <div className=' pdbody position-relative d-flex justify-content-center align-items-left '>
                 <div className='l-icon position-absolute'>
-                    <Image className='img-fluid' onClick={() =>
-                        dispatch({
-                            type: "ADD_TO_CART",
-                            payload: props.nAvl,
-                        })
-                    } src={cartIcon} alt='' />
+                <Link to={`/purchase/${_id}`}><Image className='img-fluid' src={cartIcon} alt='' /></Link>
                     <Image className='img-fluid' src={heartIcon} alt='' />
                     <Image className='img-fluid' src={searchIcon} alt='' />
                 </div>
@@ -42,8 +31,8 @@ const LeatestProductCard = (props) => {
                 </div>
             </div>
         </div>
-        // </Col>
-
+       
+    </>
     );
 };
 

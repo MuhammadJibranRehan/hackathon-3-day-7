@@ -1,35 +1,39 @@
-.banner-style{
-width: 100%;
-margin: 0;
-background-color:#F2F0FF;
-height: 764px;
+.banner-style {
+  width: 100%;
+  margin: 0;
+  background-color: #f2f0ff;
+  /* height: 764px; */
 }
 
-.button{
-    background-color: #FB2E86;
-    border-color: #FB2E86;
-    border-radius: 2px;
+.button {
+  background-color: #fb2e86;
+  border-color: #fb2e86;
+  border-radius: 2px;
 }
-.button:hover{
-    background-color: #e0317d;
-    border-color: #e0317d;
+
+.button:hover {
+  background-color: #e0317d;
+  border-color: #e0317d;
 }
-.banner-text h6{
-    font-family: 'Lato';
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: bold;
-    color: #FB2E86;   
+
+.banner-content-container h6 {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #fb2e86;
 }
-.banner-text h1{
-font-family: 'Josefin Sans';
-font-size: 52px;
-font-weight: 700;
-color: #000000;
+
+.banner-content-container h1 {
+  font-family: "Josefin Sans";
+  font-size: 52px;
+  font-weight: 700;
+  color: #000000;
 }
-.banner-text p{
-    font-family: 'Lato';
-    font-size: 16px;
-    font-weight: 700;
-    color: #8A8FB9;
+
+.banner-content-container p {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  color: #8a8fb9;
 }

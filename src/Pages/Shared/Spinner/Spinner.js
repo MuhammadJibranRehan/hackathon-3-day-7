@@ -10,10 +10,9 @@ const Spinner = () => {
         }, 8000);
     }, []);
     return (
-        <div>
+        <>
             <HashLoader size={150} color={"#FB2E86"} loading={loading} speedMultiplier={1} />
-
-        </div>
+        </>
     );
 };
 

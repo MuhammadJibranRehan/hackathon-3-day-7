@@ -1,39 +1,39 @@
-.Heading-Bar{
+.Heading-Bar {
     background-color: #7E33E0;
     height: 44px;
     width: 100%;
     color: white;
-    font-family: Josefin Sans;
+    font-family: 'Josefin Sans';
     font-size: 16px;
     line-height: 19px;
 }
-#sm-dvice-hide{
+
+#sm-dvice-hide {
     display: flex;
 }
-.pill{
-    font-family: 'Lato';
+
+.badge {
+    font-family: monospace;
     background-color: #FB2E86;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center;
-    margin-left: -4px;
-    background-color: #FB2E86;
+    border-radius: 50%;
+    font: 16px;
+    position: absolute;
+    top: 2px;
+    margin-left: 10px;
+    z-index: 12;
 }
+
+
 
 /*--------------Medea Queries-----------------
-           
-
 /* ------------Mobile Devices--------------*/
 @media only screen and (max-width: 688px) {
-    .Heading-Bar{
+    .Heading-Bar {
         height: auto;
     }
-    #sm-dvice-hide{
+
+    #sm-dvice-hide {
         display: none;
-    }
-    .pill{
-        margin-left: 15px;
     }
 
 }
-

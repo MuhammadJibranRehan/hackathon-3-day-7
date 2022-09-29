@@ -1,0 +1,26 @@
+.review-main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-main form input,
+textarea,
+select {
+    width: 40%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.review-button {
+    border-radius: 5px;
+    background-color: #FB2E86;
+    border-color: #FB2E86;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+.review-button:hover {
+    background-color: #e0317d;
+}

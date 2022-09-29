@@ -1,80 +1,103 @@
 .footerDiv {
-    height: auto;
+  height: auto;
 }
 
 .footerbody {
-    height: auto;
-    background-color: #EEEFFB;
+  height: auto;
+  background-color: #eeeffb;
 }
 
 .footer-logo {
-    font-family: 'Josefin Sans';
-    font-size: 38px;
-    line-height: 45px;
-    font-weight: 700;
-    color: #000000;
-    margin-top: 95px;
-    padding: 0;
+  font-family: "Josefin Sans";
+  font-size: 38px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 95px;
+  padding: 0;
+}
+
+.footer-logo:hover {
+  color: #fb2e86;
+  transition: 0.4s;
 }
 
 .signUp-input {
-    height: 40px;
-    width: 280px;
-    border: 1px solid #FB2E86;
-    border-radius: 3px;
-    outline: none;
-    background-color: #FFFFFF;
-
+  height: 40px;
+  width: 280px;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+  outline: none;
+  background-color: #ffffff;
 }
 
 .signUp-button {
-    height: 40px;
-    padding: 0 15px;
-    border: none;
-    border-radius: 3px;
-    outline: none;
-    color: #FFFFFF;
-    background-color: #FB2E86;
+  height: 40px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  color: #ffffff;
+  background-color: #fb2e86;
+}
+
+.signUp-button:hover {
+  background-color: #e0317d;
+  transition: 0.4s;
 }
 
 .footer-sm-div {
-    margin-top: 97px;
-    margin-bottom: 42px;
-    font-family: 'Josefin Sans';
-    font-size: 23px;
-    font-weight: 600;
-    line-height: 26px;
-    color: #000000;
+  margin-top: 97px;
+  margin-bottom: 42px;
+  font-family: "Josefin Sans";
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #000000;
 }
 
 .footerDiv h6,
 .signUp-input,
 .signUp-input::placeholder {
-    font-family: 'Lato';
-    font-size: 16px;
-    font-weight: 400;
-    color: #8A8FB9;
-
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  color: #8a8fb9;
 }
 
 .footerBottom {
-    height: auto;
-    background-color: #E7E4F8;
+  height: auto;
+  background-color: #e7e4f8;
 }
 
 .copy-right {
-    font-family: 'Lato';
-    font-size: 16px;
-    font-weight: 500;
-    color: #9DA0AE;
-    text-align: center;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 500;
+  color: #343a40;
+  text-align: center;
+}
+
+.copy-right span {
+  color: #fb2e86;
 }
 
 .iconBG {
-    height: 14px;
-    width: 14px;
-    background-color: #151875;
-    color: #FFFFFF;
-    border-radius: 50%;
-    padding: 7px;
+  height: 14px;
+  width: 14px;
+  background-color: #151875;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.footerBottom .iconBG:hover {
+  background-color: #fb2e86;
+  transition: 0.4s;
+}
+.author {
+  color: inherit;
+}
+.author:hover {
+  color: #fb2e86;
 }

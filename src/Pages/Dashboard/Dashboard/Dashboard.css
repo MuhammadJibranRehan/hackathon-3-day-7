@@ -1,57 +1,76 @@
-.admin-area {
+.dashboard-container {
+    overflow-x: hidden;
+}
+
+.dashboard-menu {
     box-sizing: border-box;
     overflow-y: auto;
     height: 100vh;
 }
 
-.admin-container {
-    overflow-x: hidden;
+.dashboard-logo {
+    transition: 0.4s;
+    text-align: center;
+    color: #5726DF;
 }
 
-.dashboard-logo {
-    text-align: center;
-    color: #0c398d;
+.dashboard-logo:hover {
+    color: #FB2E86;
 }
 
 hr {
     background-color: #000000;
-    margin: 5px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 0;
 }
 
-.admin-menu {
+ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
     cursor: pointer;
-    margin: 0 30px;
-    padding: 10px 0;
+    margin: 3px 25px;
+    padding: 8px 0;
     border-radius: 8px;
-    font-family: 'Lato';
-    font-weight: 900;
+    transition: all 0.6s ease-in;
+}
+
+.selected li,
+ul li:hover {
+    background-color: #e9ecef;
     color: #5d5f61;
 }
 
-.admin-menu:hover {
-    background-color: #e9ecef;
-
+.dashboard-link {
+    text-decoration: none;
+    font-family: 'Lato';
+    color: #5d5f61;
+    font-weight: 900;
 }
 
-
 .dashboard-icon {
-    /* color: #adb5bd; */
-    color: #0c398d;
+    color: #adb5bd;
     margin-right: 10px;
     margin-left: 15px;
     font-size: 18px;
+    transition: all 0.7s ease-in;
 }
 
-.admin-menu:hover .dashboard-icon {
-    color: #0c398d;
+/* icon color change when hover  */
+ul li:hover .dashboard-icon {
+    color: #5726DF;
 }
 
-.exitLink {
-    text-decoration: none;
+/* active icon color */
+.selected li .dashboard-icon {
+    color: #5726DF;
 }
+
 
 .dashboard-body {
-    background-color: #f8f9fa;
+    background-color: #f8f9f9;
 }

@@ -3,15 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import CartContext from './Contexts/CartContext/CartContext';
-
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <CartContext>
+
       <App />
-    </CartContext>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
