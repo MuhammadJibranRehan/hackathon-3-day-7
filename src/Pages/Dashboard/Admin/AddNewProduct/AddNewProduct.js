@@ -10,7 +10,7 @@ const AddNewProduct = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('https://gentle-taiga-66433.herokuapp.com/products', data).then(res => {
+        axios.post('https://hekto-ecommerce-server-side.vercel.app/products', data).then(res => {
             // console.log(res);
             if (res.data.insertedId) {
                 Swal.fire({

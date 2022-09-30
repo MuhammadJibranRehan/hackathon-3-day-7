@@ -16,7 +16,7 @@ const PayNow = () => {
 
     const startTimer = () => {
         // Set the date we're counting down to
-        const countDownDate = new Date('Sep 15, 2022 00:00:00').getTime();
+        const countDownDate = new Date('Dec 30, 2022 00:00:00').getTime();
 
         // Update the count down every 1 second
         interval = setInterval(() => {

@@ -9,7 +9,7 @@ const useOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`https://gentle-taiga-66433.herokuapp.com/orders/${email}`)
+        fetch(`https://hekto-ecommerce-server-side.vercel.app/orders/${email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
 

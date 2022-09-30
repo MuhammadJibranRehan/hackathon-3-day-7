@@ -18,7 +18,7 @@ const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://gentle-taiga-66433.herokuapp.com/reviews')
+        fetch('https://hekto-ecommerce-server-side.vercel.app/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
 

@@ -26,7 +26,7 @@ const PlaceOrderScreen = () => {
     // }
 
     const handlePlaceOrder=(shippingData,email)=>{
-        fetch(`https://gentle-taiga-66433.herokuapp.com/orders-placed/${email}`, {
+        fetch(`https://hekto-ecommerce-server-side.vercel.app/orders-placed/${email}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(shippingData)
@@ -47,7 +47,7 @@ const PlaceOrderScreen = () => {
 
 
         // place orders to placeOrders Collection 
-        // axios.post('https://gentle-taiga-66433.herokuapp.com/place-orders', data).then(res => {
+        // axios.post('https://hekto-ecommerce-server-side.vercel.app/place-orders', data).then(res => {
             // console.log("res >>>", data);
             // if (res.data.insertedId) {
             //     Swal.fire({
@@ -62,7 +62,7 @@ const PlaceOrderScreen = () => {
         // });
 
         // delete cart orders from orderCollection 
-        // const url = `https://gentle-taiga-66433.herokuapp.com/orders/delete/${email}`;
+        // const url = `https://hekto-ecommerce-server-side.vercel.app/orders/delete/${email}`;
         // fetch(url, {
         //     method: 'DELETE',
         // })

@@ -14,14 +14,14 @@ const ManageOrders = () => {
     // console.log(status);
 
     useEffect(() => {
-        fetch("https://gentle-taiga-66433.herokuapp.com/manage-orders")
+        fetch("https://hekto-ecommerce-server-side.vercel.app/manage-orders")
             .then((res) => res.json())
             .then((data) => setAllOrders(data));
     }, [allOrders, status]);
     const Orders =allOrders?.filter((orders) => orders?.shippingName);
 
     const handleUpdate = (id) => {
-        fetch(`https://gentle-taiga-66433.herokuapp.com/update-order-status/${id}`, {
+        fetch(`https://hekto-ecommerce-server-side.vercel.app/update-order-status/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -55,7 +55,7 @@ const ManageOrders = () => {
     };
 
     const deleteOrder = id => {
-        const url = `https://gentle-taiga-66433.herokuapp.com/order/delete/${id}`;
+        const url = `https://hekto-ecommerce-server-side.vercel.app/order/delete/${id}`;
         fetch(url, {
             method: 'DELETE',
         })

@@ -7,7 +7,7 @@ const ManageAllProducts = () => {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('https://gentle-taiga-66433.herokuapp.com/products')
+        fetch('https://hekto-ecommerce-server-side.vercel.app/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [products]);
@@ -30,7 +30,7 @@ const ManageAllProducts = () => {
     };
 
     const deleteTour = id => {
-        const url = `https://gentle-taiga-66433.herokuapp.com/products/${id}`;
+        const url = `https://hekto-ecommerce-server-side.vercel.app/products/${id}`;
         fetch(url, {
             method: 'DELETE',
         })

@@ -13,7 +13,7 @@ const Review = () => {
     const onSubmit = data => {
         // console.log(data);
 
-        fetch('https://gentle-taiga-66433.herokuapp.com/reviews', {
+        fetch('https://hekto-ecommerce-server-side.vercel.app/reviews', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

@@ -28,7 +28,7 @@ const cancelOrder = (id) => {
 };
 const deleteOrder = (id) => {
     // console.log('clicked >>> ', id);
-    const url = `https://gentle-taiga-66433.herokuapp.com/order/delete/${id}`;
+    const url = `https://hekto-ecommerce-server-side.vercel.app/order/delete/${id}`;
     fetch(url, {
         method: 'DELETE',
     }).then(res => res.json())
@@ -50,7 +50,7 @@ const OrderCard = (props) => {
     const [orders, setOrders] = useState([]);
     const email = user.email;
     useEffect(() => {
-        fetch(`https://gentle-taiga-66433.herokuapp.com/orders/${email}`)
+        fetch(`https://hekto-ecommerce-server-side.vercel.app/orders/${email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
 

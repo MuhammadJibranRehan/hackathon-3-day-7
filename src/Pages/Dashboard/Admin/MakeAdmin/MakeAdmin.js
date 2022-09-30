@@ -12,7 +12,7 @@ const MakeAdmin = () => {
 
     const onSubmit = user => {
         // console.log(user);
-        fetch('https://gentle-taiga-66433.herokuapp.com/users/admin', {
+        fetch('https://hekto-ecommerce-server-side.vercel.app/users/admin', {
             method: 'PUT',
             headers: {
                 'authorization': `Bearer ${token}`,

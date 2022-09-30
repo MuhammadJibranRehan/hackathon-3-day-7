@@ -25,7 +25,7 @@ const Purchase = () => {
 
 
     const handleOrderNow = (data) => {
-        fetch('https://gentle-taiga-66433.herokuapp.com/orders', {
+        fetch('https://hekto-ecommerce-server-side.vercel.app/orders', {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)
