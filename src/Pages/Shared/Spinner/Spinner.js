@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import HashLoader from "react-spinners/HashLoader";
+import { BounceLoader } from 'react-spinners';
 
 const Spinner = () => {
     const [loading, setLoading] = useState(false);
@@ -10,9 +10,9 @@ const Spinner = () => {
         }, 8000);
     }, []);
     return (
-        <>
-            <HashLoader size={150} color={"#FB2E86"} loading={loading} speedMultiplier={1} />
-        </>
+        <div style={{textAlign: 'center'}}>
+            <BounceLoader size={50} color={"#FB2E86"} loading={loading} speedMultiplier={1} />
+        </div>
     );
 };
 

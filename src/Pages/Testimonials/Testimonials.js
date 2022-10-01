@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination } from "swiper";
+import Spinner from '../Shared/Spinner/Spinner';
 
 
 
@@ -28,6 +29,7 @@ const Testimonials = () => {
         <section>
             <Container>
                 <h1 className='div-title'>Happy Client Says</h1>
+                {reviews?.length === 0? <div style={{padding: '300px 0'}}> <Spinner/> </div> :
                 <Row>
                     <Swiper
                         slidesPerView={1}
@@ -69,8 +71,8 @@ const Testimonials = () => {
 
                         )}
                     </Swiper>
-
                 </Row >
+                }
             </Container >
         </section >
     );

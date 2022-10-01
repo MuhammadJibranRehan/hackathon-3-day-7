@@ -9,6 +9,7 @@ import cartIcon from '../../Images/featuredIcon/fluent_cart-24-regular.svg';
 import heartIcon from '../../Images/featuredIcon/uil_heart-alt.svg';
 import searchPlusIcon from '../../Images/featuredIcon/search-plus.svg';
 import './Products.css';
+import Spinner from '../Shared/Spinner/Spinner';
 
 
 const Products = () => {
@@ -23,7 +24,7 @@ const Products = () => {
 
             {/* ....................All Products........................ */}
             <Container >
-
+            {products.length === 0? <div style={{padding: '50vh 0'}}> <Spinner/> </div> :
                 <section className='row pt-1'>
                     {products.map(product =>
                         <div key={product._id} className='col-lg-3 col-md-6 md-12 g-4'>
@@ -60,6 +61,7 @@ const Products = () => {
                         </div>
                     )}
                 </section>
+            }
             </Container>
             <p className='my-4'></p>
             <Footer></Footer>

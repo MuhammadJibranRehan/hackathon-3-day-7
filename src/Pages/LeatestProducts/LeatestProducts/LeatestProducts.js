@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper";
+import Spinner from '../../Shared/Spinner/Spinner';
 
 
 const LeatestProducts = () => {
@@ -26,7 +27,8 @@ const LeatestProducts = () => {
                     <span className='sub-category me-0'>Special Offer</span>
                 </div>
             </div>
-            <Row>
+            {products.length === 0? <Spinner/> :
+                <Row>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={10}
@@ -57,7 +59,7 @@ const LeatestProducts = () => {
                         )
                     }
                 </Swiper>
-            </Row>
+            </Row>}
         </Container>
     );
 };

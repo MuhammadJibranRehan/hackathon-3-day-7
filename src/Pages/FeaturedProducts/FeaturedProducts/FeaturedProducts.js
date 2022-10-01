@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper";
+import Spinner from '../../Shared/Spinner/Spinner';
 
 
 
@@ -27,7 +28,7 @@ const FeaturedProducts = () => {
             <div>
                 <h1 className='div-title'>Featured Products</h1>
             </div>
-
+            {products.length === 0? <Spinner/> :
             <div className="row">
                 <Swiper
                     slidesPerView={1}
@@ -62,7 +63,7 @@ const FeaturedProducts = () => {
                     }
                 </Swiper>
             </div>
-
+            }
         </Container>
     );
 };
