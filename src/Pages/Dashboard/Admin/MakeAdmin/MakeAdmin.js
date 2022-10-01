@@ -12,7 +12,7 @@ const MakeAdmin = () => {
 
     const onSubmit = user => {
         // console.log(user);
-        fetch('https://hekto-ecommerce-server-side.vercel.app/users/admin', {
+        fetch('https://hekto.onrender.com/users/admin', {
             method: 'PUT',
             headers: {
                 'authorization': `Bearer ${token}`,

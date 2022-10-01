@@ -28,7 +28,7 @@ const cancelOrder = (id) => {
 };
 const deleteOrder = (id) => {
     // console.log('clicked >>> ', id);
-    const url = `https://hekto-ecommerce-server-side.vercel.app/order/delete/${id}`;
+    const url = `https://hekto.onrender.com/order/delete/${id}`;
     fetch(url, {
         method: 'DELETE',
     }).then(res => res.json())
@@ -50,7 +50,7 @@ const OrderCard = (props) => {
     const [orders, setOrders] = useState([]);
     const email = user.email;
     useEffect(() => {
-        fetch(`https://hekto-ecommerce-server-side.vercel.app/orders/${email}`)
+        fetch(`https://hekto.onrender.com/orders/${email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
 

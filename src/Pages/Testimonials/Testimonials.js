@@ -18,7 +18,7 @@ const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://hekto-ecommerce-server-side.vercel.app/reviews')
+        fetch('https://hekto.onrender.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
 

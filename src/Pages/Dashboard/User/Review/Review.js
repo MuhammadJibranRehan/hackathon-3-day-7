@@ -13,7 +13,7 @@ const Review = () => {
     const onSubmit = data => {
         // console.log(data);
 
-        fetch('https://hekto-ecommerce-server-side.vercel.app/reviews', {
+        fetch('https://hekto.onrender.com/reviews', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

@@ -25,7 +25,7 @@ const Purchase = () => {
 
 
     const handleOrderNow = (data) => {
-        fetch('https://hekto-ecommerce-server-side.vercel.app/orders', {
+        fetch('https://hekto.onrender.com/orders', {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

@@ -9,7 +9,7 @@ const useOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`https://hekto-ecommerce-server-side.vercel.app/orders/${email}`)
+        fetch(`https://hekto.onrender.com/orders/${email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
 

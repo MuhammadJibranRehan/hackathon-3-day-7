@@ -47,7 +47,7 @@ const useFirebase = () => {
                 }).then(() => {
                     setUser(res.user);
                     //post to database 
-                    axios.post('https://hekto-ecommerce-server-side.vercel.app/users', {
+                    axios.post('https://hekto.onrender.com/users', {
                         displayName: res.user.displayName,
                         email: res.user.email,
                         // photo: res.user.photoURL
@@ -110,7 +110,7 @@ const useFirebase = () => {
 
     // Check admin or not
     useEffect(() => {
-        fetch(`https://hekto-ecommerce-server-side.vercel.app/users/${user.email}`)
+        fetch(`https://hekto.onrender.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
 
