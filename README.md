@@ -6,12 +6,9 @@
 
 ## Technology
 
-- React
-- React-bootstrap
-- Node JS
-- Express JS
-- MongoDB Database
-- Axios, React hook form , React phone input 2, Swiper, Sweetalert 2, Spinner etc....
+- NEXTJS
+- TAILWIND CSS
+- SANITY CMS
 
 ## Features
 
